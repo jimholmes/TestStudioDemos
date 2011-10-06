@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shiny_Toys_One", "Shiny_Toys_One.csproj", "{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

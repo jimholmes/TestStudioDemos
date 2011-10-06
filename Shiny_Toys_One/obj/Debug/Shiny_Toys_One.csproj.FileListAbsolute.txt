@@ -1,0 +1,11 @@
+d:\projects\ShinyToys\Shiny_Toys_One\bin\Shiny_Toys_One.dll
+d:\projects\ShinyToys\Shiny_Toys_One\bin\Shiny_Toys_One.pdb
+d:\projects\ShinyToys\Shiny_Toys_One\bin\Telerik.TestStudio.TeamPulse.dll
+d:\projects\ShinyToys\Shiny_Toys_One\bin\Telerik.Licensing.dll
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\ResolveAssemblyReference.cache
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\Shiny_Toys_One.Iteration_One.Retrieve a newly created user and validate user's data is correct.resources
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\Shiny_Toys_One.Iteration_Two.Retrieve a newly created user and validate user's data is correct.resources
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\GenerateResource.read.1.tlog
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\GenerateResource.write.1.tlog
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\Shiny_Toys_One.dll
+d:\projects\ShinyToys\Shiny_Toys_One\obj\Debug\Shiny_Toys_One.pdb
