@@ -16,7 +16,7 @@ using ArtOfTest.WebAii.ObjectModel;
 using ArtOfTest.WebAii.Silverlight;
 using ArtOfTest.WebAii.Silverlight.UI;
 
-namespace Shiny_Toys_One
+namespace TestProject6
 {
 
     //
@@ -45,7 +45,7 @@ namespace Shiny_Toys_One
     //
         
 
-    public class Retrieve_a_newly_created_user_and_validate_user_s_data_is_correct : BaseWebAiiTest
+    public class Check_a_date_string_from_DateTime_Now : BaseWebAiiTest
     {
         #region [ Dynamic Pages Reference ]
 
@@ -72,28 +72,14 @@ namespace Shiny_Toys_One
         
         // Add your test methods here...
     
-        [CodedStep(@"Connect to pop-up window : 'http://localhost:3000/contacts/7', ConnectToPopup=True")]
-        public void Retrieve_a_newly_created_user_and_validate_users_data_is_correct_CodedStep()
-        {
-            // Connect to pop-up window : 'http://localhost:3000/contacts/7'
-            Manager.WaitForNewBrowserConnect("http://localhost:3000" + GetExtractedValue("ContactLinkUrl"), true, 5000);
-            Manager.ActiveBrowser.WaitUntilReady();
-            
-        }
-    
         [CodedStep(@"New Coded Step")]
-        public void Retrieve_a_newly_created_user_and_validate_users_data_is_correct_CodedStep1()
+        public void WebTest_CodedStep()
         {
-            string url = GetExtractedValue("ContactLinkUrl").ToString();
-            string newUrl = "http://localhost:3000" + url;
-            //SetExtractedValue("ContactLinkUrl", newUrl);
-            Log.WriteLine("ContactLinkUrl: " + url + " New ContactLinkUrl: " + newUrl );
-        }
-    
-        //[CodedStep(@"New Coded Step")]
-        //public void Refresh_Page()
-        //{
+            var today = DateTime.Now;
+            var tomorrow = DateTime.Now.AddDays(1);
             
-        //}
+            SetExtractedValue("today",today.ToShortDateString());
+            SetExtractedValue("tomorrow",tomorrow.ToShortDateString());
+        }
     }
 }

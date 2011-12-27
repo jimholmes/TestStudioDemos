@@ -7,46 +7,100 @@
     <OutputPath>bin</OutputPath>
     <OutputType>Library</OutputType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProjectGuid>{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}</ProjectGuid>
+    <ProjectGuid>{0B797AD8-6291-4258-A4D6-0B431C6B0875}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ArtOfTest.WebAii, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
+    <Reference Include="ArtOfTest.WebAii, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="ArtOfTest.WebAii.Design, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
+    <Reference Include="ArtOfTest.WebAii.Design, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Telerik.WebAii.Controls.Html, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.928.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+    <Reference Include="Telerik.WebAii.Controls.Xaml.Wpf, Version=2011.2.1117.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Iteration One\Retrieve a newly created user and validate user's data is correct.tstest" />
-    <None Include="Iteration Two\Retrieve a newly created user and validate user's data is correct.tstest" />
+    <Compile Include="Iteration 3\Retrieve a newly created user and validate user%27s data is correct.tstest.cs">
+      <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Iteration 4\Create Test Contact.tstest.cs">
+      <DependentUpon>Create Test Contact.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Iteration 4\Retrieve a newly created user and validate user%27s data is correct.tstest.cs">
+      <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
+    </Compile>
+    <None Include="Iteration 1\Retrieve a newly created user and validate user's data is correct.tstest" />
+    <None Include="Iteration 2\Log in if needed.tstest" />
+    <None Include="Iteration 2\Retrieve a newly created user and validate user's data is correct.tstest" />
+    <Compile Include="Iteration 1\Retrieve a newly created user and validate user%27s data is correct.tstest.cs">
+      <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Iteration 2\Retrieve a newly created user and validate user%27s data is correct.tstest.cs">
+      <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
+    </Compile>
+    <None Include="Iteration 3\Create Test Contact.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Iteration 3\Log in if needed.tstest" />
+    <None Include="Iteration 3\Retrieve a newly created user and validate user%27s data is correct.tstest" />
+    <None Include="Iteration 4\Create Test Contact.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Iteration 4\Log in if needed.tstest" />
+    <None Include="Iteration 4\Retrieve a newly created user and validate user%27s data is correct.tstest" />
     <None Include="Settings.aiis" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Iteration One\Retrieve a newly created user and validate user%27s data is correct.resx">
+    <None Include="Iteration 1\Retrieve a newly created user and validate user's data is correct.resx">
       <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Iteration Two\Retrieve a newly created user and validate user%27s data is correct.resx">
+    </None>
+    <None Include="Iteration 2\Log in if needed.resx">
+      <DependentUpon>Log in if needed.tstest</DependentUpon>
+    </None>
+    <None Include="Iteration 2\Retrieve a newly created user and validate user's data is correct.resx">
       <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
-    </EmbeddedResource>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Iteration Two\Retrieve a newly created user and validate user%27s data is correct.tstest.cs">
+    <None Include="Iteration 3\Log in if needed.resx">
+      <DependentUpon>Log in if needed.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iteration 3\Retrieve a newly created user and validate user%27s data is correct.resx">
       <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
-    </Compile>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iteration 3\Create Test Contact.resx">
+      <DependentUpon>Create Test Contact.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iteration 4\Create Test Contact.resx">
+      <DependentUpon>Create Test Contact.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iteration 4\Log in if needed.resx">
+      <DependentUpon>Log in if needed.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iteration 4\Retrieve a newly created user and validate user%27s data is correct.resx">
+      <DependentUpon>Retrieve a newly created user and validate user%27s data is correct.tstest</DependentUpon>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

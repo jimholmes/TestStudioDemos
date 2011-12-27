@@ -1,15 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shiny_Toys_One", "Shiny_Toys_One.csproj", "{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shiny_Toys_One", "Shiny_Toys_One.csproj", "{0B797AD8-6291-4258-A4D6-0B431C6B0875}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E21F907F-1CC1-4C60-A400-CD3E35D7390D}"
+	ProjectSection(SolutionItems) = preProject
+		Shiny_Toys_One.vsmdi = Shiny_Toys_One.vsmdi
+	EndProjectSection
 EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Shiny_Toys_One.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C6D6EBD-A93C-4F93-BB8A-670338D51F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B797AD8-6291-4258-A4D6-0B431C6B0875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B797AD8-6291-4258-A4D6-0B431C6B0875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

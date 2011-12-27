@@ -16,7 +16,7 @@ using Telerik.WebAii.Controls.Html;
 using Telerik.WebAii.Controls.Xaml;
 using Telerik.WebAii.Controls.Xaml.Wpf;
 
-namespace Shiny_Toys_One
+namespace Shiny_Toys_One.Iteration_3
 {
 
     //
