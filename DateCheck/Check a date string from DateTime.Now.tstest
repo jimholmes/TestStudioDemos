@@ -19,11 +19,11 @@
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Navigate to : 'D:\vsprojects\DateCheck\DateExample.html'</d2p1:Description>
+      <d2p1:Description>Navigate to : 'D:\TestStudioDemos\DateCheck\DateExample.html'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>1</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>0bdb7cb1-3332-4999-b533-7d8be0ccbeaf</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>efefadad-9598-49e3-8ea5-291ab6828d1a</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:NavigateToActionDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -45,7 +45,7 @@
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
         <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
         <d2p1:BaseUrl />
-        <d2p1:NavigateURL>D:\vsprojects\DateCheck\DateExample.html</d2p1:NavigateURL>
+        <d2p1:NavigateURL>D:\TestStudioDemos\DateCheck\DateExample.html</d2p1:NavigateURL>
       </d2p1:Step>
       <d2p1:StepImageKey>WebTestl51ahhuz.bth</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
@@ -58,7 +58,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id>WebTest_CodedStep</d2p1:Id>
       <d2p1:Order>2</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>1e9204e8-2122-4540-864e-8aa6774de892</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>83ecca3e-0746-4cca-84e7-3806eeff29eb</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -96,7 +96,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>8ad6ac2a-ff66-44df-a35e-0b7018254d9f</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>247dcb23-4269-4fdf-9d33-bf1a662305a6</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -188,7 +188,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>4</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>98b0a1cf-760f-4a57-bd34-387b5b72103a</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>563bf033-9700-43ef-b29a-55aaa657fb06</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -280,7 +280,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>5</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>582df9a8-db60-44e2-89be-3b07938d6304</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>8131d68c-a1ab-48ff-b62b-0aa892a93810</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -372,7 +372,7 @@
       <d2p1:Enabled>true</d2p1:Enabled>
       <d2p1:Id />
       <d2p1:Order>6</d2p1:Order>
-      <d2p1:Runtime_x0020_ID>25932743-0298-433c-9a8a-49f85516fd37</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>914dcc33-2fa9-4210-a748-2d92b03b2edb</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ContentVerificationDescriptor">
         <d2p1:Constraints>
           <ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -482,7 +482,7 @@
   <Priority>0</Priority>
   <ProfilerBenchmarkResultsFilePath i:nil="true" />
   <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>C:\Users\Administrator\Documents\Test Studio Projects\TestProject6\Profiler Configurations\{07de62bc-c87a-4d34-8854-8337865999b9}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationFilePath>D:\TestStudioDemos\DateCheck\Profiler Configurations\{07de62bc-c87a-4d34-8854-8337865999b9}.tsprofconfig</ProfilerConfigurationFilePath>
   <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
   <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <ProfilerResultsDirectory>C:\Users\ADMINI~1\AppData\Local\Temp\</ProfilerResultsDirectory>
@@ -496,7 +496,7 @@
   <SilverlightEnabled>false</SilverlightEnabled>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>TestProject6.dll</TestAssembly>
-  <TestAssemblyPath>D:\vsprojects\DateCheck\bin</TestAssemblyPath>
+  <TestAssemblyPath>D:\TestStudioDemos\DateCheck\bin</TestAssemblyPath>
   <TestClass>TestProject6.Check_a_date_string_from_DateTime_Now</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <TestType>Web</TestType>
