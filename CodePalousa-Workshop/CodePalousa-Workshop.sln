@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePalousa-Workshop", "CodePalousa-Workshop\CodePalousa-Workshop.csproj", "{15E2419C-9092-45D3-96D5-824D857835EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97F49818-5471-4F25-988B-A211B972BAD9}"
+	ProjectSection(SolutionItems) = preProject
+		CodePalousa-Workshop.vsmdi = CodePalousa-Workshop.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Webdriver", "Tests.Webdriver\Tests.Webdriver.csproj", "{BFD1B76E-7C2E-4D0D-9B0C-E445A1619CC4}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CodePalousa-Workshop.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15E2419C-9092-45D3-96D5-824D857835EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E2419C-9092-45D3-96D5-824D857835EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E2419C-9092-45D3-96D5-824D857835EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E2419C-9092-45D3-96D5-824D857835EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD1B76E-7C2E-4D0D-9B0C-E445A1619CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD1B76E-7C2E-4D0D-9B0C-E445A1619CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD1B76E-7C2E-4D0D-9B0C-E445A1619CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD1B76E-7C2E-4D0D-9B0C-E445A1619CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
