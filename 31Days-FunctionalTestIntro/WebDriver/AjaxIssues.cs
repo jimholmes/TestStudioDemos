@@ -31,13 +31,17 @@ namespace WebDriverDemo
         [Test]
         public void Working_with_no_element()
         {
+            IWebDriver browser = new FirefoxDriver();
             browser.Navigate().GoToUrl(
-                "http://www.asp.net/ajaxLibrary/AjaxControlToolkitSampleSite/DropDown/DropDown.aspx");
+                "http://localhost/AJAXDemo/DropDown/DropDown.aspx");
             browser.FindElement(By.Id("ctl00_SampleContent_TextLabel")).Click();
             browser.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
             browser.FindElement(By.Id("ctl00_SampleContent_Option1")).Click();
             
-            Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_lblSelection")).Displayed);
+            Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_lblSelection"))
+                                 .Text
+                                 .Contains("Mocha Blast"));
+            browser.Quit();
         }
 
         [Test]
@@ -48,15 +52,16 @@ namespace WebDriverDemo
             string color = "Sea Green";
 
             browser.Navigate().GoToUrl(
-                "http://www.asp.net/ajaxLibrary/AjaxControlToolkitSampleSite/CascadingDropDown/CascadingDropDown.aspx");
+                "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
             var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));
 
             WebDriverWait wait = new WebDriverWait(browser, TimeSpan.FromSeconds(10));
             wait.Until<IWebElement>((d) =>
             {
                 return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList1')/option[text()='" + make + "']"));
+                    "id('ctl00_SampleContent_DropDownList1')/option[text()='Acura']"));
             });
+                                //"id('ctl00_SampleContent_DropDownList1')/option[text()='" + make + "']"));
             var makeOptions = new SelectElement(listOfMakes);
             makeOptions.SelectByText(make);
 
@@ -64,7 +69,7 @@ namespace WebDriverDemo
             wait.Until<IWebElement>((d) =>
             {
                 return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList2')/option[text()='" + model + "']"));
+                    "id('ctl00_SampleContent_DropDownList2')/option[text()='" + model + "']"));
             });
             var modelOptions = new SelectElement(listOfModels);
             modelOptions.SelectByText(model);
@@ -73,7 +78,7 @@ namespace WebDriverDemo
             wait.Until<IWebElement>((d) =>
             {
                 return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList3')/option[text()='" + color + "']"));
+                    "id('ctl00_SampleContent_DropDownList3')/option[text()='" + color + "']"));
             });
             var colorOptions = new SelectElement(listOfColors);
             colorOptions.SelectByText(color);
@@ -88,7 +93,7 @@ namespace WebDriverDemo
             IList<Car> cars = CarFactory.Return_three_valid_cars();
 
             browser.Navigate().GoToUrl(
-                "http://www.asp.net/ajaxLibrary/AjaxControlToolkitSampleSite/CascadingDropDown/CascadingDropDown.aspx");
+                "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
             WebDriverWait wait = new WebDriverWait(browser, TimeSpan.FromSeconds(10));
 
             foreach (Car car in cars)
@@ -133,14 +138,12 @@ namespace WebDriverDemo
             wait.Until<IWebElement>((d) =>
             {
                 return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList3')/option[text()='" + 
+                                              "id('ctl00_SampleContent_DropDownList3')/option[text()='" +
                                               car.Color + "']"));
             });
             var colorOptions = new SelectElement(listOfColors);
             colorOptions.SelectByText(car.Color);
         }
-  
-        
   
         private void Select_make(Car car, WebDriverWait wait)
         {
@@ -148,7 +151,7 @@ namespace WebDriverDemo
             wait.Until<IWebElement>((d) =>
             {
                 return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList1')/option[text()='" + 
+                                              "id('ctl00_SampleContent_DropDownList1')/option[text()='" +
                                               car.Make + "']"));
             });
             var makeOptions = new SelectElement(listOfMakes);
@@ -162,12 +165,21 @@ namespace WebDriverDemo
         {
             return new List<Car>
             {
-                new Car { Make = "Acura", Model = "Integra", Color = "Sea Green",
-                    Message = "Sea Green Acura Integra" },
-                new Car { Make = "Audi", Model = "S4", Color = "Metallic", 
-                    Message = "Metallic Audi S4" },
-                new Car { Make = "BMW", Model = "7 series", Color = "Brown", 
-                    Message = "Brown BMW 7 series" }
+                new Car
+                {
+                    Make = "Acura", Model = "Integra", Color = "Sea Green",
+                    Message = "Sea Green Acura Integra"
+                },
+                new Car
+                {
+                    Make = "Audi", Model = "S4", Color = "Metallic",
+                    Message = "Metallic Audi S4"
+                },
+                new Car
+                {
+                    Make = "BMW", Model = "7 series", Color = "Brown",
+                    Message = "Brown BMW 7 series"
+                }
             };
         }
     }
