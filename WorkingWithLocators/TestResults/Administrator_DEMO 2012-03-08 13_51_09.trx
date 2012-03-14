@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0795959b-f3a0-4e6c-bb44-aee6ec8d898b" name="Administrator@DEMO 2012-03-08 13:51:09" runUser="DEMO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="a4fc89be-8566-492d-8584-0e39599e9426">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Administrator_DEMO 2012-03-08 13_51_09" />
+  </TestSettings>
+  <Times creation="2012-03-08T13:51:09.9076840-05:00" queuing="2012-03-08T13:51:10.8597384-05:00" start="2012-03-08T13:51:11.2927632-05:00" finish="2012-03-08T13:51:40.7204463-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DEMO" outcome="Error" timestamp="2012-03-08T13:51:40.7134459-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <WebAiiTest name="JayneTest" storage="d:\teststudiodemos\workingwithlocators\locatortests\jaynetest.tstest" priority="0" id="850d93cf-145c-42a8-bb1a-e22310642cb6" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Description xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">WebAii Testcase</Description>
+      <DeploymentItems xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <DeploymentItem filename="bin\Debug\LocatorTests.dll" />
+      </DeploymentItems>
+      <Execution id="ff96c5cd-4a7d-4964-838d-1c81585592e3" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" />
+    </WebAiiTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="850d93cf-145c-42a8-bb1a-e22310642cb6" executionId="ff96c5cd-4a7d-4964-838d-1c81585592e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebAiiTestResult executionId="ff96c5cd-4a7d-4964-838d-1c81585592e3" testId="850d93cf-145c-42a8-bb1a-e22310642cb6" testName="JayneTest" computerName="DEMO" duration="05:00:29.4026817" startTime="2012-03-08T13:51:11.3177646-05:00" endTime="2012-03-08T13:51:40.7204463-05:00" testType="c4241296-3c6e-46b1-bf92-e0bd3e0eb017" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff96c5cd-4a7d-4964-838d-1c81585592e3" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+    </WebAiiTestResult>
+  </Results>
+</TestRun>

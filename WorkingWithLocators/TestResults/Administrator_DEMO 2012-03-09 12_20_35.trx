@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2b09c323-69fb-4a03-9d83-4732f9d8de60" name="Administrator@DEMO 2012-03-09 12:20:35" runUser="DEMO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="2d2e6d65-30de-4430-a069-c7c9a6ecd2bb">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="Administrator_DEMO 2012-03-09 12_20_35" />
+  </TestSettings>
+  <Times creation="2012-03-09T12:20:35.3596429-05:00" queuing="2012-03-09T12:20:35.9436763-05:00" start="2012-03-09T12:20:36.0216808-05:00" finish="2012-03-09T12:20:50.6405169-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <WebAiiTest name="JayneTest" storage="d:\teststudiodemos\workingwithlocators\locatortests\jaynetest.tstest" priority="0" id="850d93cf-145c-42a8-bb1a-e22310642cb6" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Description xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">WebAii Testcase</Description>
+      <DeploymentItems xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <DeploymentItem filename="bin\Debug\LocatorTests.dll" />
+      </DeploymentItems>
+      <Execution id="3c0737d4-a896-44ff-8787-91545f506a0a" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" />
+    </WebAiiTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="850d93cf-145c-42a8-bb1a-e22310642cb6" executionId="3c0737d4-a896-44ff-8787-91545f506a0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <WebAiiTestResult executionId="3c0737d4-a896-44ff-8787-91545f506a0a" testId="850d93cf-145c-42a8-bb1a-e22310642cb6" testName="JayneTest" computerName="DEMO" duration="00:00:14.5986636" startTime="2012-03-09T12:20:36.0286812-05:00" endTime="2012-03-09T12:20:50.6285163-05:00" testType="c4241296-3c6e-46b1-bf92-e0bd3e0eb017" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c0737d4-a896-44ff-8787-91545f506a0a" xmlns="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
+      <Output xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+        <ErrorInfo>
+          <Message>Overall Result: Pass
+------------------------------------------------------------
+'3/9/2012 12:20:36 PM' - Using .Net Runtime version: '4.0.30319.237' for tests execution.
+'3/9/2012 12:20:36 PM' - Starting execution....
+'3/9/2012 12:20:37 PM' - Detected custom code in test. Locating test assembly: LocatorTests.dll.
+'3/9/2012 12:20:37 PM' - Assembly Found: D:\TestStudioDemos\WorkingWithLocators\TestResults\Administrator_DEMO 2012-03-09 12_20_35\Out\LocatorTests.dll
+'3/9/2012 12:20:37 PM' - Loading code class: 'LocatorTests.JayneTest'.
+------------------------------------------------------------
+------------------------------------------------------------
+'3/9/2012 12:20:37 PM' - Using 'InternetExplorer' version '9.0' as default browser. 
+'3/9/2012 12:20:38 PM' - 'Pass' : 1. Navigate to : 'http://localhost/WorkingWithLocators/'
+'3/9/2012 12:20:38 PM' - LOG: Count of rows: 2
+'3/9/2012 12:20:38 PM' - 'Pass' : 2. [Verify_NewEarth_region_shows_proper_count] : @"New Coded Step
+'3/9/2012 12:20:39 PM' - 'Pass' : 3. [Open_jayne_cobb_for_edit] : @"New Coded Step
+'3/9/2012 12:20:39 PM' - 'Pass' : 4. Verify input 'RadGrid1Text' value 'Exact' 'Jayne'.
+'3/9/2012 12:20:39 PM' - 'Pass' : 5. Verify input 'RadGrid1Text0' value 'Exact' 'Cobb'.
+'3/9/2012 12:20:39 PM' - 'Pass' : 6. Verify input 'RadGrid1Text1' value 'Exact' 'New Earth'.
+------------------------------------------------------------
+'3/9/2012 12:20:39 PM' - Overall Result: Pass
+'3/9/2012 12:20:39 PM' - Duration: [0 min: 1 sec: 839 msec]
+------------------------------------------------------------
+'3/9/2012 12:20:40 PM' - Test completed!
+</Message>
+        </ErrorInfo>
+      </Output>
+      <WebAiiTestResult Type="ArtOfTest.WebAii.Design.Execution.TestResult" Version="2011.2.1413.0" xmlns="">
+        <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+        <TestName Type="System.String">JayneTest</TestName>
+        <TestPath Type="System.String">JayneTest.tstest</TestPath>
+        <TestDescription Type="System.String">
+        </TestDescription>
+        <ProjectPath Type="System.String">
+        </ProjectPath>
+        <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+        <AutomationStepResults>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.1413.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">Navigate to : 'http://localhost/WorkingWithLocators/'</StepDescription>
+            <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+            <TestName Type="System.String">JayneTest</TestName>
+            <TestPath Type="System.String">JayneTest.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">0</TestStepNumber>
+            <Order Type="System.Int32">1</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">1347723234</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.1413.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">[Verify_NewEarth_region_shows_proper_count] : @"New Coded Step</StepDescription>
+            <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+            <TestName Type="System.String">JayneTest</TestName>
+            <TestPath Type="System.String">JayneTest.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">1</TestStepNumber>
+            <Order Type="System.Int32">2</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">2113398267</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.1413.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">[Open_jayne_cobb_for_edit] : @"New Coded Step</StepDescription>
+            <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+            <TestName Type="System.String">JayneTest</TestName>
+            <TestPath Type="System.String">JayneTest.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">2</TestStepNumber>
+            <Order Type="System.Int32">3</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">2113398268</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.1413.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">Verify input 'RadGrid1Text' value 'Exact' 'Jayne'.</StepDescription>
+            <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+            <TestName Type="System.String">JayneTest</TestName>
+            <TestPath Type="System.String">JayneTest.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">3</TestStepNumber>
+            <Order Type="System.Int32">4</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">950034499</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.1413.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">Verify input 'RadGrid1Text0' value 'Exact' 'Cobb'.</StepDescription>
+            <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+            <TestName Type="System.String">JayneTest</TestName>
+            <TestPath Type="System.String">JayneTest.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">4</TestStepNumber>
+            <Order Type="System.Int32">5</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">950034500</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+          <Item Type="ArtOfTest.WebAii.Design.AutomationStepResult" Version="2011.2.1413.0">
+            <ResultType Type="ArtOfTest.Common.Design.ResultType">Pass</ResultType>
+            <StepDescription Type="System.String">Verify input 'RadGrid1Text1' value 'Exact' 'New Earth'.</StepDescription>
+            <TestId Type="System.String">850d93cf-145c-42a8-bb1a-e22310642cb6</TestId>
+            <TestName Type="System.String">JayneTest</TestName>
+            <TestPath Type="System.String">JayneTest.tstest</TestPath>
+            <TestStepNumber Type="System.Int32">5</TestStepNumber>
+            <Order Type="System.Int32">6</Order>
+            <LogMessageOnError Type="System.String">
+            </LogMessageOnError>
+            <HashCode Type="System.Int32">950034501</HashCode>
+            <IsManual Type="System.Boolean">False</IsManual>
+            <WasStepEnabled Type="System.Boolean">False</WasStepEnabled>
+          </Item>
+        </AutomationStepResults>
+        <NotRunStepDescriptions />
+        <PerStepMessages Type="System.String">Overall Result: Pass
+------------------------------------------------------------
+'3/9/2012 12:20:36 PM' - Using .Net Runtime version: '4.0.30319.237' for tests execution.
+'3/9/2012 12:20:36 PM' - Starting execution....
+'3/9/2012 12:20:37 PM' - Detected custom code in test. Locating test assembly: LocatorTests.dll.
+'3/9/2012 12:20:37 PM' - Assembly Found: D:\TestStudioDemos\WorkingWithLocators\TestResults\Administrator_DEMO 2012-03-09 12_20_35\Out\LocatorTests.dll
+'3/9/2012 12:20:37 PM' - Loading code class: 'LocatorTests.JayneTest'.
+------------------------------------------------------------
+------------------------------------------------------------
+'3/9/2012 12:20:37 PM' - Using 'InternetExplorer' version '9.0' as default browser. 
+'3/9/2012 12:20:38 PM' - 'Pass' : 1. Navigate to : 'http://localhost/WorkingWithLocators/'
+'3/9/2012 12:20:38 PM' - LOG: Count of rows: 2
+'3/9/2012 12:20:38 PM' - 'Pass' : 2. [Verify_NewEarth_region_shows_proper_count] : @"New Coded Step
+'3/9/2012 12:20:39 PM' - 'Pass' : 3. [Open_jayne_cobb_for_edit] : @"New Coded Step
+'3/9/2012 12:20:39 PM' - 'Pass' : 4. Verify input 'RadGrid1Text' value 'Exact' 'Jayne'.
+'3/9/2012 12:20:39 PM' - 'Pass' : 5. Verify input 'RadGrid1Text0' value 'Exact' 'Cobb'.
+'3/9/2012 12:20:39 PM' - 'Pass' : 6. Verify input 'RadGrid1Text1' value 'Exact' 'New Earth'.
+------------------------------------------------------------
+'3/9/2012 12:20:39 PM' - Overall Result: Pass
+'3/9/2012 12:20:39 PM' - Duration: [0 min: 1 sec: 839 msec]
+------------------------------------------------------------
+'3/9/2012 12:20:40 PM' - Test completed!
+</PerStepMessages>
+        <TotalNumberOfPassedSteps Type="System.Int32">6</TotalNumberOfPassedSteps>
+        <ExecutingTestStepCount Type="System.Int32">6</ExecutingTestStepCount>
+        <TotalNumberOfNotRunSteps Type="System.Int32">0</TotalNumberOfNotRunSteps>
+        <IsDataDrivenResult Type="System.Boolean">False</IsDataDrivenResult>
+        <SeparatorLineCharCount Type="System.Int32">60</SeparatorLineCharCount>
+        <ExecutionType Type="ArtOfTest.Common.Design.ExecutionType">QuickExecution</ExecutionType>
+        <EndTime Type="System.DateTime">2012-03-09 17:20:39Z</EndTime>
+        <StarTime Type="System.DateTime">2012-03-09 17:20:37Z</StarTime>
+        <DataIterationResults />
+        <VersionGroupKey Type="System.String">00000000-0000-0000-0000-000000000000</VersionGroupKey>
+      </WebAiiTestResult>
+    </WebAiiTestResult>
+  </Results>
+</TestRun>

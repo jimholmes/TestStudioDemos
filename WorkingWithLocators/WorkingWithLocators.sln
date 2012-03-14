@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithLocators", "WorkingWithLocators\WorkingWithLocators.csproj", "{77323514-CA2A-467E-844C-D07017CBAAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocatorTests", "LocatorTests\LocatorTests.csproj", "{FF9A5695-B77E-4CCB-B36D-45178B1E1EFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24C0872E-22BE-4811-823D-0CED4D859BFA}"
+	ProjectSection(SolutionItems) = preProject
+		WorkingWithLocators.vsmdi = WorkingWithLocators.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WorkingWithLocators.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77323514-CA2A-467E-844C-D07017CBAAB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77323514-CA2A-467E-844C-D07017CBAAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77323514-CA2A-467E-844C-D07017CBAAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77323514-CA2A-467E-844C-D07017CBAAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9A5695-B77E-4CCB-B36D-45178B1E1EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9A5695-B77E-4CCB-B36D-45178B1E1EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9A5695-B77E-4CCB-B36D-45178B1E1EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9A5695-B77E-4CCB-B36D-45178B1E1EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
