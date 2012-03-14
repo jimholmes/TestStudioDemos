@@ -1,0 +1,35 @@
+    ======  ======
+    Time:3/13/2012 11:09:30 PM
+    Title: Initiate log
+    Message: 
+    Time:3/13/2012 11:09:30 PM
+    Title: LICENSER
+    Message: READ REGS START
+    Time:3/13/2012 11:09:30 PM
+    Title: LIC EXP_KEY
+    Message: NULL
+    Time:3/13/2012 11:09:30 PM
+    Title: LICENSER
+    Message: READ REGS SUCCESS
+    Time:3/13/2012 11:09:30 PM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:3/13/2012 11:09:30 PM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:3/13/2012 11:09:30 PM
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:3/13/2012 11:09:30 PM
+    Title: ILMValidate action
+    Message: Set PC
+    Time:3/13/2012 11:09:30 PM
+    Title: ILMValidate action
+    Message: Check for VL
+    Time:3/13/2012 11:09:30 PM
+    Title: Requesting Validation
+    Message: ILMValidate True
+    Time:3/13/2012 11:09:30 PM
+    Title: Requesting Validation
+    Message: ILMValidate True NotTrial
+    Entering constructor for: Microsoft.VisualStudio.QuickSearch.Package.HostPackage
