@@ -60,36 +60,36 @@ namespace WebDriverDemo
             browser.Navigate().GoToUrl(
                 "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
 
-            var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));            
             Wait_for_make_option_to_populate(wait, make);
-            Select_make_from_list(listOfMakes, make);
+            Select_make_from_list(make);
 
-            var listOfModels = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList2"));
             Wait_for_model_option_to_populate(model, wait);
-            Select_model_from_list(listOfModels, model);
+            Select_model_from_list(model);
 
-            var listOfColors = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList3"));
             Wait_for_color_option_to_populate(color, wait);
-            Select_color_from_list(listOfColors, color);
+            Select_color_from_list(color);
 
             browser.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
             Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_Label1")).Text.Contains(color));
         }
   
-        private void Select_color_from_list(IWebElement listOfColors, string color)
+        private void Select_color_from_list(string color)
         {
+            var listOfColors = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList3"));
             var colorOptions = new SelectElement(listOfColors);
             colorOptions.SelectByText(color);
         }
   
-        private void Select_model_from_list(IWebElement listOfModels, string model)
+        private void Select_model_from_list(string model)
         {
+            var listOfModels = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList2"));
             var modelOptions = new SelectElement(listOfModels);
             modelOptions.SelectByText(model);
         }
   
-        private void Select_make_from_list(IWebElement listOfMakes, string make)
+        private void Select_make_from_list(string make)
         {
+            var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));
             var makeOptions = new SelectElement(listOfMakes);
             makeOptions.SelectByText(make);
         }
