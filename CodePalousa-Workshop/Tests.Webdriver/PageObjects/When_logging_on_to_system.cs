@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.PageObjects;
 
@@ -18,6 +19,11 @@ namespace Tests.Webdriver.PageObjects
         public void run_before_any_tests()
         {
             browser = new FirefoxDriver();
+
+            //WARNING: If using IE driver remember to switch
+            // to x86 target. Performance of IE driver in 
+            // x64 targets sucks bong water.
+            //browser = new InternetExplorerDriver();
         }
 
         [TestFixtureTearDown]
