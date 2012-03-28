@@ -55,13 +55,12 @@ namespace WebDriverDemo
             string make = "Acura";
             string model = "Integra";
             string color = "Sea Green";
+            WebDriverWait wait = new WebDriverWait(browser, TimeSpan.FromSeconds(10));
 
             browser.Navigate().GoToUrl(
                 "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
-            var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));
 
-            WebDriverWait wait = new WebDriverWait(browser, TimeSpan.FromSeconds(10));
-            
+            var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));            
             Wait_for_make_option_to_populate(wait, make);
             Select_make_from_list(listOfMakes, make);
 
@@ -74,7 +73,7 @@ namespace WebDriverDemo
             Select_color_from_list(listOfColors, color);
 
             browser.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
-            Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_Label1")).Displayed);
+            Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_Label1")).Text.Contains(color));
         }
   
         private void Select_color_from_list(IWebElement listOfColors, string color)
