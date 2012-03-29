@@ -55,12 +55,14 @@ namespace WebDriverDemo
             string make = "Acura";
             string model = "Integra";
             string color = "Sea Green";
-            WebDriverWait wait = new WebDriverWait(browser, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = 
+                new WebDriverWait(browser, 
+                    TimeSpan.FromSeconds(10));
 
             browser.Navigate().GoToUrl(
                 "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
 
-            Wait_for_make_option_to_populate(wait, make);
+            Wait_for_make_option_to_populate(make, wait);
             Select_make_from_list(make);
 
             Wait_for_model_option_to_populate(model, wait);
@@ -70,7 +72,9 @@ namespace WebDriverDemo
             Select_color_from_list(color);
 
             browser.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
-            Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_Label1")).Text.Contains(color));
+            Assert.IsTrue(browser.FindElement(
+                By.Id("ctl00_SampleContent_Label1")).
+                Text.Contains(color));
         }
   
         private void Select_color_from_list(string color)
@@ -112,7 +116,7 @@ namespace WebDriverDemo
             });
         }
   
-        private void Wait_for_make_option_to_populate(WebDriverWait wait, string make)
+        private void Wait_for_make_option_to_populate(string make, WebDriverWait wait)
         {
             wait.Until<IWebElement>((d) =>
             {
@@ -133,10 +137,16 @@ namespace WebDriverDemo
             foreach (Car car in cars)
             {
                 browser.Navigate().Refresh();
-            
-                Select_make(car, wait);
-                Select_model(car, wait);
-                Select_color(car, wait);
+
+                Wait_for_make_option_to_populate(car.Make, wait);
+                Select_make_from_list(car.Make);
+
+                Wait_for_model_option_to_populate(car.Model, wait);
+                Select_model_from_list(car.Model);
+
+                Wait_for_color_option_to_populate(car.Color, wait);
+                Select_color_from_list(car.Color);
+
                 Validate_message(car, wait);
             }
         }
@@ -151,46 +161,7 @@ namespace WebDriverDemo
             });
             Assert.IsTrue(messageActual.Text.Contains(car.Message), "Message: " +
                                                                     messageActual.Text);
-        }
-
-        private void Select_model(Car car, WebDriverWait wait)
-        {
-            var listOfModels = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList2"));
-            wait.Until<IWebElement>((d) =>
-            {
-                return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList2')/option[text()='" +
-                                              car.Model + "']"));
-            });
-            var modelOptions = new SelectElement(listOfModels);
-            modelOptions.SelectByText(car.Model);
-        }
-
-        private void Select_color(Car car, WebDriverWait wait)
-        {
-            var listOfColors = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList3"));
-            wait.Until<IWebElement>((d) =>
-            {
-                return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList3')/option[text()='" +
-                                              car.Color + "']"));
-            });
-            var colorOptions = new SelectElement(listOfColors);
-            colorOptions.SelectByText(car.Color);
-        }
-  
-        private void Select_make(Car car, WebDriverWait wait)
-        {
-            var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));
-            wait.Until<IWebElement>((d) =>
-            {
-                return d.FindElement(By.XPath(
-                                              "id('ctl00_SampleContent_DropDownList1')/option[text()='" +
-                                              car.Make + "']"));
-            });
-            var makeOptions = new SelectElement(listOfMakes);
-            makeOptions.SelectByText(car.Make);
-        }
+        }        
     }
 
     public static class CarFactory
