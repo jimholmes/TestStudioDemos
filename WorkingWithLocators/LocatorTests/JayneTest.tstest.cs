@@ -84,9 +84,10 @@ namespace LocatorTests
         [CodedStep(@"New Coded Step")]
         public void Verify_NewEarth_region_shows_proper_count()
         {
-            //RadGrid grid = Pages.DemoPage.Contacts_Table;
             
+            //RadGrid grid = Pages.DemoPage.Contacts_Table;
             RadGrid grid = Find.ById<RadGrid>("RadGrid1");
+            
             IList<Element> newEarthContacts = 
                 grid.Find.AllByContent("New Earth");
 
@@ -97,4 +98,9 @@ namespace LocatorTests
         }        
     }
 }
+
+
+
+//RadGrid grid = Pages.DemoPage.Contacts_Table;
+
     
