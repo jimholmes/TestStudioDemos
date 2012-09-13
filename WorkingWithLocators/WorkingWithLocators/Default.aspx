@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" %> <!-- Inherits="Default" %> -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -27,12 +27,13 @@
 
 	</div>
 	<telerik:RadGrid ID="RadGrid1" runat="server" AllowSorting="True" 
-        CellSpacing="0" DataSourceID="Contacts" GridLines="None" PageSize="5">
+        CellSpacing="0" DataSourceID="ContactsDataSource" GridLines="None" 
+        PageSize="5">
         <ClientSettings>
             <Resizing AllowColumnResize="True" />
         </ClientSettings>
-<MasterTableView AutoGenerateColumns="False" OverrideDataSourceControlSorting=
-            DataSourceID="Contacts">
+<MasterTableView AutoGenerateColumns="False" 
+            DataSourceID="ContactsDataSource">
 <CommandItemSettings ExportToPdfText="Export to PDF"></CommandItemSettings>
 
 <RowIndicatorColumn FilterControlAltText="Filter RowIndicator column">
@@ -43,31 +44,6 @@
 <HeaderStyle Width="20px"></HeaderStyle>
 </ExpandCollapseColumn>
 
-    <Columns>
-        <telerik:GridBoundColumn DataField="Company" 
-            FilterControlAltText="Filter Company column" HeaderText="Company" 
-            SortExpression="Company" UniqueName="Company">
-        </telerik:GridBoundColumn>
-        <telerik:GridBoundColumn DataField="LastName" 
-            FilterControlAltText="Filter LastName column" HeaderText="LastName" 
-            SortExpression="LastName" UniqueName="LastName">
-        </telerik:GridBoundColumn>
-        <telerik:GridBoundColumn DataField="FirstName" 
-            FilterControlAltText="Filter FirstName column" HeaderText="FirstName" SortExpression="FirstName" 
-            UniqueName="FirstName">
-        </telerik:GridBoundColumn>
-        <telerik:GridBoundColumn DataField="Region" 
-            FilterControlAltText="Filter Region column" HeaderText="Region" 
-            SortExpression="Region" UniqueName="Region">
-        </telerik:GridBoundColumn>
-        <telerik:GridBoundColumn DataField="Id" DataType="System.Int32" 
-            FilterControlAltText="Filter Id column" HeaderText="Id" SortExpression="Id" 
-            UniqueName="Id">
-        </telerik:GridBoundColumn>
-        <telerik:GridEditCommandColumn FilterControlAltText="Filter EditCommandColumn column">
-        </telerik:GridEditCommandColumn>
-    </Columns>
-
 <EditFormSettings>
 <EditColumn FilterControlAltText="Filter EditCommandColumn column"></EditColumn>
 </EditFormSettings>
@@ -77,8 +53,8 @@
 
 <HeaderContextMenu CssClass="GridContextMenu GridContextMenu_Default"></HeaderContextMenu>
     </telerik:RadGrid>
-	<asp:ObjectDataSource ID="Contacts" runat="server" SelectMethod="ContactList" 
-        TypeName="WorkingWithLocators.Contacts"></asp:ObjectDataSource>
+	<asp:ObjectDataSource ID="ContactsDataSource" runat="server">
+    </asp:ObjectDataSource>
 	</form>
     <p>
 &nbsp;&nbsp;&nbsp;

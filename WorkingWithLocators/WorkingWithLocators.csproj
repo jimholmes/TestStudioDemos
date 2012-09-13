@@ -34,16 +34,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="LocatorTests\Backup\2012.1.425.0\Bar.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LocatorTests\Backup\2012.1.425.0\Foo.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LocatorTests\Backup\2012.1.425.0\JayneTest.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LocatorTests\FindJayneInGrid.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="LocatorTests\JayneTest.tstest" />
+    <Compile Include="LocatorTests\Backup\2012.1.425.0\JayneTest.tstest.cs">
+      <DependentUpon>JayneTest.tstest</DependentUpon>
+    </Compile>
     <Compile Include="LocatorTests\JayneTest.tstest.cs">
       <DependentUpon>JayneTest.tstest</DependentUpon>
     </Compile>
+    <None Include="LocatorTests\KendoGrid.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Settings.aiis" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LocatorTests\JayneTest.resx">
       <DependentUpon>JayneTest.tstest</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocatorTests\Backup\2012.1.425.0\Bar.resx">
+      <DependentUpon>Bar.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocatorTests\Backup\2012.1.425.0\Foo.resx">
+      <DependentUpon>Foo.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocatorTests\Backup\2012.1.425.0\JayneTest.resx">
+      <DependentUpon>JayneTest.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocatorTests\FindJayneInGrid.resx">
+      <DependentUpon>FindJayneInGrid.tstest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocatorTests\KendoGrid.resx">
+      <DependentUpon>KendoGrid.tstest</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

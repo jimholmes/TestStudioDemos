@@ -1,0 +1,49 @@
+    ======  ======
+    Time:6/6/2012 8:12:51 AM
+    Title: Initiate log
+    Message: 
+    Time:6/6/2012 8:12:51 AM
+    Title: LICENSER
+    Message: READ REGS START
+    Time:6/6/2012 8:12:51 AM
+    Title: LIC EXP_KEY
+    Message: NULL
+    Time:6/6/2012 8:12:51 AM
+    Title: LICENSER
+    Message: READ REGS SUCCESS
+    Time:6/6/2012 8:12:51 AM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:6/6/2012 8:12:51 AM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:6/6/2012 8:12:51 AM
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:6/6/2012 8:12:51 AM
+    Title: ILMValidate action
+    Message: Set PC
+    Time:6/6/2012 8:12:51 AM
+    Title: ILMValidate action
+    Message: Check for VL
+    Time:6/6/2012 8:12:52 AM
+    Title: Requesting Validation
+    Message: ILMValidate True
+    Time:6/6/2012 8:12:52 AM
+    Title: Requesting Validation
+    Message: ILMValidate True NotTrial
+    Time:6/6/2012 8:12:54 AM
+    Title: Initiate log
+    Message: 
+    Time:6/6/2012 8:12:54 AM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:6/6/2012 8:12:54 AM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:6/6/2012 8:12:54 AM
+    Title: Checking EVT
+    Message: EVTP has value
+    Entering Initialize() of: Microsoft.VisualStudio.TeamArchitect.DesignersCommon.DesignersCommonPackage
+    Entering QueryClose for: Telerik.Windows.Silverlight.VSPackage.VsPackage
+    Entering QueryClose for: Telerik.Web.UI.VSPackage.VSPackage

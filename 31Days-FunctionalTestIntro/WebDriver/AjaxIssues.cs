@@ -36,12 +36,12 @@ namespace WebDriverDemo
                 "http://localhost/AJAXDemo/DropDown/DropDown.aspx");
             browser.FindElement(
                 By.Id("ctl00_SampleContent_TextLabel")).Click();
-            
-            browser.Manage().Timeouts().
-                ImplicitlyWait(TimeSpan.FromSeconds(10));
-            
+          
             browser.FindElement(
                 By.Id("ctl00_SampleContent_Option1")).Click();
+
+            browser.Manage().Timeouts().
+                ImplicitlyWait(TimeSpan.FromSeconds(10));
             
             Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_lblSelection"))
                                  .Text
@@ -58,9 +58,9 @@ namespace WebDriverDemo
             WebDriverWait wait = 
                 new WebDriverWait(browser, 
                     TimeSpan.FromSeconds(10));
-
-            browser.Navigate().GoToUrl(
-                "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
+            string targetURL = "http://www.asp.net/ajaxLibrary/AjaxControlToolkitSampleSite/CascadingDropDown/CascadingDropDown.aspx";
+            //string targetURL = "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx";
+            browser.Navigate().GoToUrl(targetURL);
 
             Wait_for_make_option_to_populate(make, wait);
             Select_make_from_list(make);
@@ -71,10 +71,7 @@ namespace WebDriverDemo
             Wait_for_color_option_to_populate(color, wait);
             Select_color_from_list(color);
 
-            browser.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
-            Assert.IsTrue(browser.FindElement(
-                By.Id("ctl00_SampleContent_Label1")).
-                Text.Contains(color));
+            Wait_for_message_to_populate(color, wait);            
         }
   
         private void Select_color_from_list(string color)
@@ -125,13 +122,22 @@ namespace WebDriverDemo
             });
         }
 
+        private void Wait_for_message_to_populate(string message, WebDriverWait wait)
+        {
+            wait.Until<IWebElement>((d) =>
+            {
+                return d.FindElement(By.XPath(
+                    "id('ctl00_SampleContent_Label1')[contains(.,'" + message + "')]"));
+            });
+        }
+
         [Test]
         public void Working_with_no_content_data_driven()
         {
             IList<Car> cars = CarFactory.Return_three_valid_cars();
 
-            browser.Navigate().GoToUrl(
-                "http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
+            browser.Navigate().GoToUrl("http://www.asp.net/ajaxLibrary/AjaxControlToolkitSampleSite/CascadingDropDown/CascadingDropDown.aspx");
+                //"http://localhost/AJAXDemo/CascadingDropDown/CascadingDropDown.aspx");
             WebDriverWait wait = new WebDriverWait(browser, TimeSpan.FromSeconds(10));
 
             foreach (Car car in cars)

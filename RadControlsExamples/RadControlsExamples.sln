@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadControlsExamples", "RadControlsExamples\RadControlsExamples.csproj", "{ABD65DCD-70A9-438D-9E3F-FF0DFFBCE11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStudioTests", "TestStudioTests\TestStudioTests.csproj", "{26F96133-2123-4A2D-9903-2B1A1D740016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD65DCD-70A9-438D-9E3F-FF0DFFBCE11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD65DCD-70A9-438D-9E3F-FF0DFFBCE11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD65DCD-70A9-438D-9E3F-FF0DFFBCE11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD65DCD-70A9-438D-9E3F-FF0DFFBCE11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F96133-2123-4A2D-9903-2B1A1D740016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F96133-2123-4A2D-9903-2B1A1D740016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F96133-2123-4A2D-9903-2B1A1D740016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F96133-2123-4A2D-9903-2B1A1D740016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

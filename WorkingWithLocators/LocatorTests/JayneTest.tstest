@@ -10,6 +10,7 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <Description />
@@ -25,14 +26,17 @@
   <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:string>System</d2p1:string>
     <d2p1:string>System.Core</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
-    <d2p1:string>ArtOfTest.WebAii.Design, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
-    <d2p1:string>Telerik.TestingFramework.Controls.KendoUI, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</d2p1:string>
+    <d2p1:string>ArtOfTest.WebAii.Design, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Html, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.WebAii.Controls.Xaml.Wpf, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
+    <d2p1:string>Telerik.TestingFramework.Controls.KendoUI, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</d2p1:string>
     <d2p1:string>D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</d2p1:string>
     <d2p1:string>System.Windows.Forms</d2p1:string>
+    <d2p1:string>D:\TestStudioDemos\WorkingWithLocators\LocatorTests\libs\nunit.framework.dll</d2p1:string>
+    <d2p1:string>Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</d2p1:string>
+    <d2p1:string>LocatorTests\libs\nunit.framework.dll</d2p1:string>
   </CurrentReferences>
   <DataInfo xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0">
     <d2p1:BuiltInData i:nil="true" />
@@ -45,6 +49,7 @@
     <d2p1:DataType>None</d2p1:DataType>
     <d2p1:DefaultToGrid>true</d2p1:DefaultToGrid>
     <d2p1:HasBuiltinGrid>false</d2p1:HasBuiltinGrid>
+    <d2p1:LoadRecordsCount i:nil="true" />
     <d2p1:TSQL />
   </DataInfo>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -86,12 +91,12 @@
       <d2p1:Name>$$Independent$$</d2p1:Name>
       <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
-        <d4p1:BaseUrl>http://localhost</d4p1:BaseUrl>
-        <d4p1:CompareMode>FullPath</d4p1:CompareMode>
+        <d4p1:BaseUrl />
+        <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
         <d4p1:FriendlyName>DemoPage</d4p1:FriendlyName>
-        <d4p1:Path>/WorkingWithLocators/</d4p1:Path>
+        <d4p1:Path>http://localhost/WorkingWithLocators/</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title />
       </d2p1:Page>
@@ -102,7 +107,7 @@
     <d2p1:ElementDescriptor>
       <d2p1:DomStateKey />
       <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
-        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[5]</d2p1:BackupSearchClause>
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]/table[1]</d2p1:BackupSearchClause>
         <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
@@ -110,10 +115,10 @@
               <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d2p1:Clauses>
                 <d2p1:HtmlFindClause>
-                  <d2p1:Clause>id=RadGrid1</d2p1:Clause>
+                  <d2p1:Clause>tagname=table</d2p1:Clause>
                 </d2p1:HtmlFindClause>
                 <d2p1:HtmlFindClause>
-                  <d2p1:Clause>tagname=div</d2p1:Clause>
+                  <d2p1:Clause>id=ctl00_MainContent_PeopleGrid_ctl00</d2p1:Clause>
                 </d2p1:HtmlFindClause>
               </d2p1:Clauses>
               <d2p1:Constraints />
@@ -131,12 +136,12 @@
       <d2p1:Name>$$Independent$$</d2p1:Name>
       <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
-        <d4p1:BaseUrl>http://localhost</d4p1:BaseUrl>
-        <d4p1:CompareMode>FullPath</d4p1:CompareMode>
+        <d4p1:BaseUrl />
+        <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
         <d4p1:FriendlyName>DemoPage</d4p1:FriendlyName>
-        <d4p1:Path>/WorkingWithLocators/</d4p1:Path>
+        <d4p1:Path>http://localhost/WorkingWithLocators/</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title />
       </d2p1:Page>
@@ -147,7 +152,7 @@
     <d2p1:ElementDescriptor>
       <d2p1:DomStateKey />
       <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
-        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[5]</d2p1:BackupSearchClause>
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]/table[1]</d2p1:BackupSearchClause>
         <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
             <d5p1:key>Html</d5p1:key>
@@ -155,10 +160,10 @@
               <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d2p1:Clauses>
                 <d2p1:HtmlFindClause>
-                  <d2p1:Clause>id=RadGrid1</d2p1:Clause>
+                  <d2p1:Clause>tagname=table</d2p1:Clause>
                 </d2p1:HtmlFindClause>
                 <d2p1:HtmlFindClause>
-                  <d2p1:Clause>tagname=div</d2p1:Clause>
+                  <d2p1:Clause>id=ctl00_MainContent_PeopleGrid_ctl00</d2p1:Clause>
                 </d2p1:HtmlFindClause>
               </d2p1:Clauses>
               <d2p1:Constraints />
@@ -176,12 +181,12 @@
       <d2p1:Name>$$Independent$$</d2p1:Name>
       <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
         <d4p1:AlwaysUseTitleInCompare>false</d4p1:AlwaysUseTitleInCompare>
-        <d4p1:BaseUrl>http://localhost</d4p1:BaseUrl>
-        <d4p1:CompareMode>FullPath</d4p1:CompareMode>
+        <d4p1:BaseUrl />
+        <d4p1:CompareMode>FullPathAndQuery</d4p1:CompareMode>
         <d4p1:EquivalentUrls xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d4p1:Fragment />
         <d4p1:FriendlyName>DemoPage</d4p1:FriendlyName>
-        <d4p1:Path>/WorkingWithLocators/</d4p1:Path>
+        <d4p1:Path>http://localhost/WorkingWithLocators/</d4p1:Path>
         <d4p1:Query />
         <d4p1:Title />
       </d2p1:Page>
@@ -220,7 +225,7 @@
       <d2p1:Order>1</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>f3029906-59f2-4b2c-ad0f-6db0e3bd1435</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>40054648-e0f6-47e3-bd58-cfbab8fc09c3</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:NavigateToActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -259,7 +264,7 @@
       <d2p1:Order>2</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>7cdd172f-ac74-4877-878c-a9fe8585ce57</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>a602a2c1-9fc6-4f1c-b8ad-5d6afff40c63</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -281,14 +286,16 @@
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
         <d2p1:Code>            
             //RadGrid grid = Pages.DemoPage.Contacts_Table;
-            RadGrid grid = Find.ById&lt;RadGrid&gt;("RadGrid1");
+
+            RadGrid grid = Find.ById&lt;RadGrid&gt;("ctl00_MainContent_PeopleGrid_ctl00");
             
             IList&lt;Element&gt; newEarthContacts = 
                 grid.Find.AllByContent("New Earth");
 
             Log.WriteLine("Count of rows: " + newEarthContacts.Count);
 
-            Assert.AreEqual(2, newEarthContacts.Count);
+            ArtOfTest.Common.UnitTesting.Assert.AreEqual(2, newEarthContacts.Count);
+            //NUnit.Framework.Assert.AreEqual(2, 2);
 
 </d2p1:Code>
         <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
@@ -301,12 +308,12 @@
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
       <d2p1:Description>[Open_jayne_cobb_for_edit] : @"New Coded Step</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
+      <d2p1:Enabled>false</d2p1:Enabled>
       <d2p1:Id>Open_jayne_cobb_for_edit</d2p1:Id>
       <d2p1:Order>3</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>1d38b763-dd8e-49b7-aad9-695bdc1d7132</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>8fff0011-745d-41fd-9154-492c8cf6255e</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:CodedStepDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -326,10 +333,11 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>            RadGrid grid = Pages.DemoPage.Contacts_Table;
+        <d2p1:Code>            //RadGrid grid = Pages.DemoPage.Contacts_Table;
+            RadGrid grid = Find.ById&lt;RadGrid&gt;("ctl00_MainContent_PeopleGrid_ctl00");
             HtmlTableRow jayne = grid.Find.TableRow("Cobb");
-            Assert.IsNotNull(jayne);
-            Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
+            ArtOfTest.Common.UnitTesting.Assert.IsNotNull(jayne);
+            ArtOfTest.Common.UnitTesting.Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
 
             HtmlAnchor edit = jayne.Find.ByContent&lt;HtmlAnchor&gt;("Edit");
             edit.Click();
@@ -349,7 +357,7 @@
       <d2p1:Order>4</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>805bc633-49ea-43d8-a1e7-16316f4f7b4b</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>b8727a82-fb02-402b-837d-1c3ed50105be</d2p1:Runtime_x0020_ID>
       <d2p1:Step xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" i:type="d4p1:InputValueVerificationDescriptor">
         <d2p1:Constraints>
           <d4p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -439,7 +447,7 @@
       <d2p1:Order>5</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>2476d697-e7ad-4994-a7a5-83b29bf00d4f</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>b9aea60c-069c-4c72-82cc-b135b61f5e40</d2p1:Runtime_x0020_ID>
       <d2p1:Step xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" i:type="d4p1:InputValueVerificationDescriptor">
         <d2p1:Constraints>
           <d4p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -529,7 +537,7 @@
       <d2p1:Order>6</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>cc6ebe17-4fd1-4028-be89-262336fc4e91</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>4e01117f-6fdc-4377-9338-eae490b572b7</d2p1:Runtime_x0020_ID>
       <d2p1:Step xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0" i:type="d4p1:InputValueVerificationDescriptor">
         <d2p1:Constraints>
           <d4p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -613,7 +621,7 @@
   </Steps>
   <StopTestListOnFailure>false</StopTestListOnFailure>
   <TestAssembly>LocatorTests.dll</TestAssembly>
-  <TestAssemblyPath>bin</TestAssemblyPath>
+  <TestAssemblyPath>bin\</TestAssemblyPath>
   <TestClass>LocatorTests.JayneTest</TestClass>
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>

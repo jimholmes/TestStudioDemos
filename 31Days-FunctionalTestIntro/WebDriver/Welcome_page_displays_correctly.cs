@@ -52,6 +52,12 @@ namespace WebDriver
 
             browser.FindElement(By.Id("username")).SendKeys("testuser");
             browser.FindElement(By.Id("password")).SendKeys("abc123");
+           
+            //In earlier versions of WebDriver you'd need to change focus to another
+            //element to get the backing JavaScript to fire off. Changed around
+            //WebDriver v2.15 or so. You can comment the following line out
+            //and the test will run merrily along and pass just fine.
+            //browser.FindElement(By.Id("username")).Click();
      
             browser.FindElement(By.Id("login_button")).Click();
         }

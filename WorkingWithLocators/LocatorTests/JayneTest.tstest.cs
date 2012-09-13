@@ -15,6 +15,8 @@ using ArtOfTest.WebAii.Silverlight.UI;
 using Telerik.WebAii.Controls.Html;
 using Telerik.WebAii.Controls.Xaml;
 
+//using NUnit.Framework;
+
 namespace LocatorTests
 {
 
@@ -72,10 +74,11 @@ namespace LocatorTests
         [CodedStep(@"New Coded Step")]
         public void Open_jayne_cobb_for_edit()
         {
-            RadGrid grid = Pages.DemoPage.Contacts_Table;
+            //RadGrid grid = Pages.DemoPage.Contacts_Table;
+            RadGrid grid = Find.ById<RadGrid>("ctl00_MainContent_PeopleGrid_ctl00");
             HtmlTableRow jayne = grid.Find.TableRow("Cobb");
-            Assert.IsNotNull(jayne);
-            Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
+            ArtOfTest.Common.UnitTesting.Assert.IsNotNull(jayne);
+            ArtOfTest.Common.UnitTesting.Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
 
             HtmlAnchor edit = jayne.Find.ByContent<HtmlAnchor>("Edit");
             edit.Click();
@@ -86,14 +89,16 @@ namespace LocatorTests
         {
             
             //RadGrid grid = Pages.DemoPage.Contacts_Table;
-            RadGrid grid = Find.ById<RadGrid>("RadGrid1");
+
+            RadGrid grid = Find.ById<RadGrid>("ctl00_MainContent_PeopleGrid_ctl00");
             
             IList<Element> newEarthContacts = 
                 grid.Find.AllByContent("New Earth");
 
             Log.WriteLine("Count of rows: " + newEarthContacts.Count);
 
-            Assert.AreEqual(2, newEarthContacts.Count);
+            ArtOfTest.Common.UnitTesting.Assert.AreEqual(2, newEarthContacts.Count);
+            //NUnit.Framework.Assert.AreEqual(2, 2);
 
         }        
     }

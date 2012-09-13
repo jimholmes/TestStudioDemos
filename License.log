@@ -1,0 +1,566 @@
+    ======  ======
+    Time:6/28/2012 11:46:51 AM
+    Title: Initiate log
+    Message: 
+    Time:6/28/2012 11:46:51 AM
+    Title: LICENSER
+    Message: READ REGS START
+    Time:6/28/2012 11:46:51 AM
+    Title: LIC EXP_KEY
+    Message: NULL
+    Time:6/28/2012 11:46:51 AM
+    Title: LICENSER
+    Message: READ REGS SUCCESS
+    Time:6/28/2012 11:46:51 AM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:6/28/2012 11:46:51 AM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:6/28/2012 11:46:51 AM
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:6/28/2012 11:46:51 AM
+    Title: ILMValidate action
+    Message: Set PC
+    Time:6/28/2012 11:46:51 AM
+    Title: ILMValidate action
+    Message: Check for VL
+    Time:6/28/2012 11:46:51 AM
+    Title: Requesting Validation
+    Message: ILMValidate True
+    Time:6/28/2012 11:46:51 AM
+    Title: Requesting Validation
+    Message: ILMValidate True NotTrial
+    Recording: RecorderHostService constructor : Host endpoint: net.pipe://localhost/Instance/1147/DesignCanvas/5192
+    Uncategorized: Loader.LoadTranslatorGroups() : ------- Function Start -------
+    Uncategorized: Loader.LoadTranslatorGroups() : Translators Directory is : C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Translators
+    Uncategorized: Loader.LoadTranslatorGroups() : ------- Function End -------
+    Uncategorized: BugTrackersLoader.LoadSystems() : ------- Function Start -------
+    Uncategorized: BugTrackersLoader.LoadSystems() : Bug Trackers folder path is : C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Plugins\BugTrackers
+    Uncategorized: BugTrackersLoader.LoadSystems() : Searching for IBugTracker implementers in "C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Plugins\BugTrackers\Telerik.TestStudio.TeamPulseBugTracker.dll"...
+    Uncategorized: BugTrackersLoader.LoadSystems() : TeamPulse Server implements IBugTracker and was loaded in the system.
+    Uncategorized: BugTrackersLoader.LoadSystems() : Searching for IBugTracker implementers in "C:\Program Files (x86)\Telerik\Test Studio 2011.2\Bin\Plugins\BugTrackers\Telerik.TestStudio.TFSBugTracker.dll"...
+    Uncategorized: BugTrackersLoader.LoadSystems() : Team Foundation Server implements IBugTracker and was loaded in the system.
+    Uncategorized: Orchestrator.set_SelectedProject() : Active Project is : 'WorkingWithLocators'
+    Uncategorized: Orchestrator._iUIProject_ProjectOpened() : Project 'WorkingWithLocators' Ready.
+    ProjectModel: DataHelper.GetDataSourcesList() : ------- Function Start -------
+    ProjectModel: DataHelper.GetDataSourcesList() : Building DataSourceItems in : D:\TestStudioDemos\WorkingWithLocators\Data\
+    ProjectModel: DataHelper.GetDataSourcesList() : ------- Function End -------
+    TestStudio: WebAiiTestEditorPane.PrepareForProjectOpen() : RemoveElementsAndAddTarget: Loading Project File
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'JayneTest' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'JayneTest' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'JayneTest' selected.
+    Uncategorized: Orchestrator._iUIProject_TestSelected() : Test 'JayneTest' selected.
+    Entering QueryClose for: Telerik.Windows.Silverlight.VSPackage.VsPackage
+    Entering QueryClose for: Telerik.Web.UI.VSPackage.VSPackage
+    Uncategorized: Orchestrator._iUIProject_ProjectClosed() : Project 'WorkingWithLocators' Closed.
+    Framework: BrowserProvisioner.EndService() : Connecting to the provisioning pipe "Pipe.ArtOfTest.WebAii.BrowserProvisioner_-1504965031" in order to unblock and eventually terminate it...
+    Framework: BrowserProvisioner.EndService() : Provisioning pipe connected.
+    Framework: BrowserProvisioner.ServiceThread() : A new client has connected to the provisioning pipe but this will be treated as a termination cue.
+    Framework: BrowserProvisioner.EndService() : Provisioning thread terminated.
+    DialogPlayback: DialogMonitor.Stop() : Dialog monitoring is being halted.
+    UIAutomation: AutomationExtensions.AddAutomationEventHandler() : Added a(n) WindowPatternIdentifiers.WindowOpenedProperty handler on element System.Windows.Automation.AutomationElement scope Descendants.
+    Framework: BrowserProvisioner.EndService() : Connecting to the provisioning pipe "Pipe.ArtOfTest.WebAii.BrowserProvisioner_-918350164" in order to unblock and eventually terminate it...
+    Framework: BrowserProvisioner.ServiceThread() : A new client has connected to the provisioning pipe but this will be treated as a termination cue.
+    Framework: BrowserProvisioner.EndService() : Provisioning pipe connected.
+    Framework: BrowserProvisioner.EndService() : Provisioning thread terminated.
+    DialogPlayback: DialogMonitor.Stop() : Dialog monitoring is being halted.
+    UIAutomation: AutomationExtensions.AddAutomationEventHandler() : Added a(n) WindowPatternIdentifiers.WindowOpenedProperty handler on element System.Windows.Automation.AutomationElement scope Descendants.
+    Entering QueryClose for: Telerik.Windows.Silverlight.VSPackage.VsPackage
+    Entering QueryClose for: Telerik.Web.UI.VSPackage.VSPackage
+T
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:38 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:38 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:38 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:42 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:42 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:42 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:42 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:42 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:42 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 12:14:42 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 12:14:42 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 12:14:42 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/15/2012 3:11:48 PM
+        Title: Initiate log
+        Message: 
+        Time:3/15/2012 3:11:48 PM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/15/2012 3:11:48 PM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/15/2012 3:11:48 PM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:01 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:01 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:01 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:01 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:16:17 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:16:17 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:16:17 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:27:52 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:27:52 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:27:52 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:27:52 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:27:52 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:27:52 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate log
+        Message: 
+        Time:3/16/2012 9:27:52 AM
+        Title: Initiate InternalManager
+        Message: Trying to Validate License
+        Time:3/16/2012 9:27:52 AM
+        Title: Requesting EVT
+        Message: EVTP
+        Time:3/16/2012 9:27:52 AM
+        Title: Checking EVT
+        Message: EVTP has value
+        Entering QueryClose for: Telerik.Web.UI.VSPackage.VSPackage

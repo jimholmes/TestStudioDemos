@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <RootNamespace>LocatorTests</RootNamespace>
@@ -6,6 +7,7 @@
     <OutputPath>bin</OutputPath>
     <OutputType>Library</OutputType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectGuid>{47F02957-BB5D-41BD-BB6C-810018A07F06}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ArtOfTest.WebAii, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
@@ -14,8 +16,11 @@
     <Reference Include="ArtOfTest.WebAii.Design, Version=2012.1.528.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
       <SpecificVersion>false</SpecificVersion>
     </Reference>
-    <Reference Include="D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -33,19 +38,61 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="New Jayne Test.tstest.cs">
+      <DependentUpon>New Jayne Test.tstest</DependentUpon>
+    </Compile>
+    <None Include="Bar.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FindJayneInGrid.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Foo.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="JayneTest.tstest" />
     <Compile Include="JayneTest.tstest.cs">
       <DependentUpon>JayneTest.tstest</DependentUpon>
     </Compile>
+    <None Include="KendoGrid.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="New Jayne Test.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Settings.aiis" />
   </ItemGroup>
   <ItemGroup>
     <None Include="JayneTest.resx">
       <DependentUpon>JayneTest.tstest</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Bar.resx">
+      <DependentUpon>Bar.tstest</DependentUpon>
+    </None>
+    <None Include="Foo.resx">
+      <DependentUpon>Foo.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KendoGrid.resx">
+      <DependentUpon>KendoGrid.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FindJayneInGrid.resx">
+      <DependentUpon>FindJayneInGrid.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="New Jayne Test.resx">
+      <DependentUpon>New Jayne Test.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Name="LocatorTests" Version="2012.1.425.0" VsProjectLanguage="CSharp" xmlns="" />
+      <UserProperties Name="LocatorTests" />
     </VisualStudio>
   </ProjectExtensions>
   <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

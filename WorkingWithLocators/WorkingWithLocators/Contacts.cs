@@ -27,20 +27,22 @@ namespace WorkingWithLocators
             {
                 new Contact
                 {
+                    Id = 12,
+                    FirstName = "Jayne",
+                    LastName = "Cobb",
+                    Company = "Blue Sun",
+                    Region = "New Earth"
+                },
+                
+                new Contact
+                {
                     Id = 1,
                     FirstName = "Jim",
                     LastName = "Holmes",
                     Company = "Telerik",
                     Region = "Midwest"
                 },
-                new Contact
-                {
-                    Id = 2,
-                    FirstName = "Jayne",
-                    LastName = "Cobb",
-                    Company = "Blue Sun",
-                    Region = "New Earth"
-                },
+                
                 new Contact
                 {
                     Id = 3,
