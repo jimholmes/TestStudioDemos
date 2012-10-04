@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]D:\TestStudioDemos\DevReachWorkshop\DevReachWorkshopTests.nunit</TopNode>
+  <SelectedNode>[0-1015]DevReach.Working.When_logging_on_to_system.providing_correct_credentials_logs_user_on</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]D:\TestStudioDemos\DevReachWorkshop\DevReachWorkshopTests.nunit" Expanded="true" />
+    <Node UniqueName="[0-1012]D:\TestStudioDemos\DevReachWorkshop\DevReachWorkshop\bin\Debug\DevReachWorkshop.dll" Expanded="true" />
+    <Node UniqueName="[0-1013]DevReachWorkshop" Expanded="true" />
+    <Node UniqueName="[0-1008]DevReachWorkshop.DynamicContent" Expanded="true" />
+    <Node UniqueName="[0-1006]DevReachWorkshop.When_logged_on_to_homepage" Expanded="true" />
+    <Node UniqueName="[0-1001]DevReachWorkshop.When_logging_on_to_system" Expanded="true" />
+    <Node UniqueName="[0-1003]DevReachWorkshop.WorkingWithTables" Expanded="true" />
+    <Node UniqueName="[0-1021]D:\TestStudioDemos\DevReachWorkshop\DevReach.Working\bin\Debug\DevReach.Working.dll" Expanded="true" />
+    <Node UniqueName="[0-1022]DevReach" Expanded="true" />
+    <Node UniqueName="[0-1023]DevReach.Working" Expanded="true" />
+    <Node UniqueName="[0-1016]DevReach.Working.Refactored_when_logging_on_to_system" Expanded="true" />
+    <Node UniqueName="[0-1014]DevReach.Working.When_logging_on_to_system" Expanded="true" />
+    <Node UniqueName="[0-1019]DevReach.Working.Working_with_cascading_menus" Expanded="true" />
+  </Nodes>
+</VisualState>

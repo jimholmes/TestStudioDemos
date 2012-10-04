@@ -1,0 +1,8 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="DevReachWorkshop\bin\Debug\DevReachWorkshop.dll" />
+    <assembly path="DevReach.Working\bin\Debug\DevReach.Working.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto" />
+</NUnitProject>
