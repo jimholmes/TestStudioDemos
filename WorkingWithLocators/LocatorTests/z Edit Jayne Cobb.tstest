@@ -15,12 +15,12 @@
   </DataInfo>
   <Description />
   <IsManual>false</IsManual>
-  <Name>New Jayne Test</Name>
+  <Name>z Edit Jayne Cobb</Name>
   <Owner i:nil="true" />
-  <Path>New Jayne Test.tstest</Path>
+  <Path>z Edit Jayne Cobb.tstest</Path>
   <Priority>0</Priority>
   <TestType>Web</TestType>
-  <UniqueId>7bad0095-ff14-48ad-a334-13da79b65fc3</UniqueId>
+  <UniqueId>eb83e043-7345-4242-8a36-937b066c5d7e</UniqueId>
   <Version>200</Version>
   <BrowserType>NotSet</BrowserType>
   <CurrentReferences xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -53,13 +53,13 @@
   </DataInfo>
   <DeploymentItems xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <DomStatesCounter xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <HasCodeBehind>true</HasCodeBehind>
+  <HasCodeBehind>false</HasCodeBehind>
   <HtmlDescription />
   <IndependentDescriptors xmlns:d2p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
     <d2p1:ElementDescriptor>
       <d2p1:DomStateKey />
       <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
-        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]</d2p1:BackupSearchClause>
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[3]</d2p1:BackupSearchClause>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
@@ -68,23 +68,23 @@
               <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
               <d2p1:Clauses>
                 <d2p1:HtmlFindClause>
-                  <d2p1:Clause>id=ctl00_MainContent_PeopleGrid</d2p1:Clause>
+                  <d2p1:Clause>id=ctl00_MainContent_PeopleGrid_ctl00__2</d2p1:Clause>
                 </d2p1:HtmlFindClause>
                 <d2p1:HtmlFindClause>
-                  <d2p1:Clause>tagname=div</d2p1:Clause>
+                  <d2p1:Clause>tagname=tr</d2p1:Clause>
                 </d2p1:HtmlFindClause>
               </d2p1:Clauses>
               <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
         </d2p1:FindExpressions>
-        <d2p1:Name>Content Grid</d2p1:Name>
+        <d2p1:Name>Dynamic Jayne Cobb Row</d2p1:Name>
         <d2p1:NodeKind>4</d2p1:NodeKind>
         <d2p1:TechnologyType>Html</d2p1:TechnologyType>
       </d2p1:FindExpression>
       <d2p1:FindInfo i:nil="true" />
       <d2p1:Frame i:nil="true" />
-      <d2p1:HtmlControlType>Telerik.WebAii.Controls.Html.RadGrid</d2p1:HtmlControlType>
+      <d2p1:HtmlControlType>Telerik.WebAii.Controls.Html.GridDataItem</d2p1:HtmlControlType>
       <d2p1:IsIndependent>true</d2p1:IsIndependent>
       <d2p1:Name>$$Independent$$</d2p1:Name>
       <d2p1:Page xmlns:d4p1="http://artoftest.com/schemas/WebAiiDesignCanvas/1.0.0" i:type="d4p1:PageUri">
@@ -105,7 +105,7 @@
     <d2p1:ElementDescriptor>
       <d2p1:DomStateKey />
       <d2p1:FindExpression i:type="d2p1:HtmlFindExpressionElement">
-        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[3]</d2p1:BackupSearchClause>
+        <d2p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[6]/a[1]</d2p1:BackupSearchClause>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:FindExpressions xmlns:d5p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
           <d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
@@ -113,6 +113,7 @@
             <d5p1:value i:type="d2p1:HtmlFindExpression">
               <d2p1:ChainStops xmlns:d8p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
                 <d8p1:int>2</d8p1:int>
+                <d8p1:int>4</d8p1:int>
               </d2p1:ChainStops>
               <d2p1:Clauses>
                 <d2p1:HtmlFindClause>
@@ -127,12 +128,18 @@
                 <d2p1:HtmlFindClause>
                   <d2p1:Clause>innertext=~cobb</d2p1:Clause>
                 </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>tagname=a</d2p1:Clause>
+                </d2p1:HtmlFindClause>
+                <d2p1:HtmlFindClause>
+                  <d2p1:Clause>textcontent=Edit</d2p1:Clause>
+                </d2p1:HtmlFindClause>
               </d2p1:Clauses>
               <d2p1:Constraints />
             </d5p1:value>
           </d5p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
         </d2p1:FindExpressions>
-        <d2p1:Name>Jayne Cobb Row0</d2p1:Name>
+        <d2p1:Name>Dynamic Jayne Cobb Edit Anchor0</d2p1:Name>
         <d2p1:NodeKind>4</d2p1:NodeKind>
         <d2p1:TechnologyType>Html</d2p1:TechnologyType>
       </d2p1:FindExpression>
@@ -162,7 +169,7 @@
   <IsTestFragment>false</IsTestFragment>
   <ProfilerBenchmarkResultsFilePath i:nil="true" />
   <ProfilerBenchmarkResultsId>00000000-0000-0000-0000-000000000000</ProfilerBenchmarkResultsId>
-  <ProfilerConfigurationFilePath>D:\TestStudioDemos\WorkingWithLocators\LocatorTests\Profiler Configurations\{7bad0095-ff14-48ad-a334-13da79b65fc3}.tsprofconfig</ProfilerConfigurationFilePath>
+  <ProfilerConfigurationFilePath>D:\TestStudioDemos\WorkingWithLocators\LocatorTests\Profiler Configurations\{eb83e043-7345-4242-8a36-937b066c5d7e}.tsprofconfig</ProfilerConfigurationFilePath>
   <ProfilerConfigurationId>00000000-0000-0000-0000-000000000000</ProfilerConfigurationId>
   <ProfilerConfigurations xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <ProfilerResultsDirectory i:nil="true" />
@@ -170,7 +177,7 @@
   <QcFilePath i:nil="true" />
   <QcId>0</QcId>
   <QcTestVersionStamp>0</QcTestVersionStamp>
-  <ResourceFilePath>New Jayne Test.resx</ResourceFilePath>
+  <ResourceFilePath>z Edit Jayne Cobb.resx</ResourceFilePath>
   <ReuseAppWindow>0</ReuseAppWindow>
   <SilverlightAppLocalDirectory />
   <SilverlightAppOriginUri i:nil="true" />
@@ -187,7 +194,7 @@
       <d2p1:Order>1</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>ef4ca7b6-b2c8-482d-bfd8-d4d960b5a6fa</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>d120d35d-5632-4beb-82a8-febd3d4c51ab</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:NavigateToActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
           <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -213,32 +220,92 @@
         <d2p1:BaseUrl />
         <d2p1:NavigateURL>http://localhost/WorkingWithLocators/</d2p1:NavigateURL>
       </d2p1:Step>
-      <d2p1:StepImageKey>New Jayne Testrprwbyit.fqw</d2p1:StepImageKey>
+      <d2p1:StepImageKey>z Edit Jayne Cobbuwrmayol.5zt</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[New_Jayne_Test_CodedStep] : @"New Coded Step</d2p1:Description>
+      <d2p1:Description>Click 'Dynamic Jayne Cobb Edit Anchor'</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id>New_Jayne_Test_CodedStep</d2p1:Id>
+      <d2p1:Id />
       <d2p1:Order>2</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>114b6658-ca74-4d8f-82eb-16ca214162dc</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="d2p1:CodedStepDescriptor">
+      <d2p1:Runtime_x0020_ID>4953a72b-b37b-4843-8cd7-1d0d0ae5262c</d2p1:Runtime_x0020_ID>
+      <d2p1:Step i:type="d2p1:ClickActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
-          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </d5p1:ConstraintValues>
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
-        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
+            <d5p1:Key>target</d5p1:Key>
+            <d5p1:Value xmlns:d7p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
+              <d7p1:DomStateKey />
+              <d7p1:FindExpression i:type="d7p1:HtmlFindExpressionElement">
+                <d7p1:BackupSearchClause>/html[1]/body[1]/form[1]/div[3]/div[2]/div[1]/table[1]/tbody[1]/tr[3]/td[6]/a[1]</d7p1:BackupSearchClause>
+                <d7p1:DataBindingExpressions />
+                <d7p1:FindExpressions xmlns:d9p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+                  <d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
+                    <d9p1:key>Html</d9p1:key>
+                    <d9p1:value i:type="d7p1:HtmlFindExpression">
+                      <d7p1:ChainStops>
+                        <d5p1:int>2</d5p1:int>
+                        <d5p1:int>4</d5p1:int>
+                      </d7p1:ChainStops>
+                      <d7p1:Clauses>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=div</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>id=ctl00_MainContent_PeopleGrid</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=tr</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>innertext=~cobb</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>tagname=a</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                        <d7p1:HtmlFindClause>
+                          <d7p1:Clause>textcontent=Edit</d7p1:Clause>
+                        </d7p1:HtmlFindClause>
+                      </d7p1:Clauses>
+                      <d7p1:Constraints />
+                    </d9p1:value>
+                  </d9p1:KeyValuePairOfTechnologyTypeanyTypeHXKb0FV5>
+                </d7p1:FindExpressions>
+                <d7p1:Name>Dynamic Jayne Cobb Edit Anchor</d7p1:Name>
+                <d7p1:NodeKind>4</d7p1:NodeKind>
+                <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              </d7p1:FindExpression>
+              <d7p1:FindInfo i:nil="true" />
+              <d7p1:Frame i:nil="true" />
+              <d7p1:HtmlControlType>Telerik.WebAii.Controls.Html.RadGrid</d7p1:HtmlControlType>
+              <d7p1:IsIndependent>false</d7p1:IsIndependent>
+              <d7p1:Name>target</d7p1:Name>
+              <d7p1:Page i:type="d2p1:PageUri">
+                <d2p1:AlwaysUseTitleInCompare>false</d2p1:AlwaysUseTitleInCompare>
+                <d2p1:BaseUrl />
+                <d2p1:CompareMode>FullPathAndQuery</d2p1:CompareMode>
+                <d2p1:EquivalentUrls />
+                <d2p1:Fragment />
+                <d2p1:FriendlyName>DemoPage</d2p1:FriendlyName>
+                <d2p1:Path>http://localhost/WorkingWithLocators/</d2p1:Path>
+                <d2p1:Query />
+                <d2p1:Title />
+              </d7p1:Page>
+              <d7p1:Region i:nil="true" />
+              <d7p1:TechnologyType>Html</d7p1:TechnologyType>
+              <d7p1:Version>200</d7p1:Version>
+            </d5p1:Value>
+          </d5p1:KeyValueOfstringElementDescriptorJagf4TWk>
+        </d2p1:Elements>
         <d2p1:LogMessageOnFailure />
         <d2p1:Pause>None</d2p1:Pause>
         <d2p1:RunsAgainstVersion />
@@ -246,90 +313,28 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>
-            //RadGrid grid = Pages.DemoPage.Content_Grid;
-
-            RadGrid grid = Pages.DemoPage.Content_Grid;
-                        
-            IList&lt;Element&gt; newEarthContacts =
-               grid.Find.AllByContent("New Earth");
-
-            Log.WriteLine("Count of rows: " + newEarthContacts.Count);
-
-            Assert.AreEqual(2, newEarthContacts.Count);
-
-</d2p1:Code>
-        <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
+        <AjaxTimeout xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">0</AjaxTimeout>
+        <ClosesBrowser xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">false</ClosesBrowser>
+        <UseBackupSearch xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.Extensibility">true</UseBackupSearch>
+        <d2p1:SimulateRealClick>false</d2p1:SimulateRealClick>
       </d2p1:Step>
-      <d2p1:StepImageKey>New Jayne Testkpbhbjz3.1sp</d2p1:StepImageKey>
-      <d2p1:StepState>Coded</d2p1:StepState>
+      <d2p1:StepImageKey>z Edit Jayne Cobb1rxdot1e.1mq</d2p1:StepImageKey>
+      <d2p1:StepState>NoCode</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
     <d2p1:AutomationStep i:type="d2p1:AutomationStep">
       <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
       <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>[New_Jayne_Test_CodedStep1] : @"New Coded Step</d2p1:Description>
+      <d2p1:Description>Manual: asdf</d2p1:Description>
       <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id>New_Jayne_Test_CodedStep1</d2p1:Id>
+      <d2p1:Id />
       <d2p1:Order>3</d2p1:Order>
       <d2p1:QcId>0</d2p1:QcId>
       <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>a7dbade4-79fb-43a7-813b-1c414235aab7</d2p1:Runtime_x0020_ID>
-      <d2p1:Step i:type="d2p1:CodedStepDescriptor">
-        <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
-          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </d5p1:ConstraintValues>
-        </d2p1:Constraints>
-        <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:EditorType />
-        <d2p1:Elements xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <d2p1:LogMessageOnFailure />
-        <d2p1:Pause>None</d2p1:Pause>
-        <d2p1:RunsAgainstVersion />
-        <d2p1:StepType>Action</d2p1:StepType>
-        <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
-        <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
-        <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Code>            // RadGrid grid = Pages.DemoPage.Content_Grid;
-
-            RadGrid grid = Find.ById&lt;RadGrid&gt;("ctl00_MainContent_PeopleGrid");
-            HtmlTableRow jayne = grid.Find.TableRow("Cobb");
-            Assert.IsNotNull(jayne);
-            Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
-
-            HtmlAnchor edit = jayne.Find.ByContent&lt;HtmlAnchor&gt;("Edit");
-            edit.Click();
-
-            //asserts that edit fields show properly
-</d2p1:Code>
-        <d2p1:RequiresSilverlight>false</d2p1:RequiresSilverlight>
-      </d2p1:Step>
-      <d2p1:StepImageKey>New Jayne Test0irau45o.gg0</d2p1:StepImageKey>
-      <d2p1:StepState>Coded</d2p1:StepState>
-      <d2p1:Version>200</d2p1:Version>
-    </d2p1:AutomationStep>
-    <d2p1:AutomationStep i:type="d2p1:AutomationStep">
-      <d2p1:ContinueOnFailure>false</d2p1:ContinueOnFailure>
-      <d2p1:CustomDescription i:nil="true" />
-      <d2p1:Description>Manual: Pause</d2p1:Description>
-      <d2p1:Enabled>true</d2p1:Enabled>
-      <d2p1:Id />
-      <d2p1:Order>4</d2p1:Order>
-      <d2p1:QcId>0</d2p1:QcId>
-      <d2p1:QcVersionStamp>0</d2p1:QcVersionStamp>
-      <d2p1:Runtime_x0020_ID>287c509b-466c-4607-bc10-dae43ad1ed3a</d2p1:Runtime_x0020_ID>
+      <d2p1:Runtime_x0020_ID>c7aae7f9-5f23-4942-b8fe-e15bad28ae06</d2p1:Runtime_x0020_ID>
       <d2p1:Step i:type="d2p1:ManualStepActionDescriptor">
         <d2p1:Constraints xmlns:d5p1="http://artoftest.com/schemas/WebAiiDesignCanvas/2.0.0">
-          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-            <d6p1:KeyValueOfstringstring>
-              <d6p1:Key>RunsAgainstVersion</d6p1:Key>
-              <d6p1:Value />
-            </d6p1:KeyValueOfstringstring>
-          </d5p1:ConstraintValues>
+          <d5p1:ConstraintValues xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         </d2p1:Constraints>
         <d2p1:DataBindingExpressions xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <d2p1:EditorType />
@@ -341,30 +346,21 @@
         <d2p1:UseStepWaitOnElementsTimout>false</d2p1:UseStepWaitOnElementsTimout>
         <d2p1:WaitOnElements>true</d2p1:WaitOnElements>
         <d2p1:WaitOnElementsTimeout>10000</d2p1:WaitOnElementsTimeout>
-        <d2p1:Description>Pause</d2p1:Description>
+        <d2p1:Description>asdf</d2p1:Description>
         <d2p1:ExecutionTimeout>10</d2p1:ExecutionTimeout>
       </d2p1:Step>
-      <d2p1:StepImageKey>New Jayne Testes3wlttb.3wm</d2p1:StepImageKey>
+      <d2p1:StepImageKey>z Edit Jayne Cobbjmn00ib5.dus</d2p1:StepImageKey>
       <d2p1:StepState>NoCode</d2p1:StepState>
       <d2p1:Version>200</d2p1:Version>
     </d2p1:AutomationStep>
   </Steps>
   <StopTestListOnFailure>false</StopTestListOnFailure>
-  <TestAssembly>LocatorTests.dll</TestAssembly>
-  <TestAssemblyPath>bin\</TestAssemblyPath>
-  <TestClass>LocatorTests.New_Jayne_Test</TestClass>
+  <TestAssembly />
+  <TestAssemblyPath />
+  <TestClass i:nil="true" />
   <TestLinks xmlns:d2p1="http://schemas.datacontract.org/2004/07/ArtOfTest.WebAii.Design.ProjectModel.TestLinks" />
   <UseDefaultWpfAppPath>false</UseDefaultWpfAppPath>
-  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:KeyValueOfstringstring>
-      <d2p1:Key>Timeout</d2p1:Key>
-      <d2p1:Value>0</d2p1:Value>
-    </d2p1:KeyValueOfstringstring>
-    <d2p1:KeyValueOfstringstring>
-      <d2p1:Key>ExecId</d2p1:Key>
-      <d2p1:Value>00000000-0000-0000-0000-000000000000</d2p1:Value>
-    </d2p1:KeyValueOfstringstring>
-  </VSProperties>
+  <VSProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <WebKitExecutionDelay>0</WebKitExecutionDelay>
   <WpfAppPath i:nil="true" />
 </WebAiiTest>

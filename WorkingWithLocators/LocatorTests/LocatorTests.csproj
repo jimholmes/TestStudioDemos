@@ -41,13 +41,7 @@
     <Compile Include="New Jayne Test.tstest.cs">
       <DependentUpon>New Jayne Test.tstest</DependentUpon>
     </Compile>
-    <None Include="Bar.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="FindJayneInGrid.tstest">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Foo.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="JayneTest.tstest" />
@@ -61,18 +55,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Settings.aiis" />
+    <None Include="z Edit Jayne Cobb.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="JayneTest.resx">
       <DependentUpon>JayneTest.tstest</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Bar.resx">
-      <DependentUpon>Bar.tstest</DependentUpon>
-    </None>
-    <None Include="Foo.resx">
-      <DependentUpon>Foo.tstest</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +78,11 @@
     <None Include="New Jayne Test.resx">
       <DependentUpon>New Jayne Test.tstest</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="z Edit Jayne Cobb.resx">
+      <DependentUpon>z Edit Jayne Cobb.tstest</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

@@ -1,4 +1,4 @@
-<ProjectSettings Type="ArtOfTest.WebAii.Design.UserSettings" Version="2012.1.719.0">
+<ProjectSettings Type="ArtOfTest.WebAii.Design.UserSettings" Version="2012.2.919.0">
   <__DataMember_ShouldDeleteElement IsDataContractSerialized="True" PropertyName="ShouldDeleteElement" PropertyType="System.Boolean">
     <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
   </__DataMember_ShouldDeleteElement>
@@ -128,6 +128,9 @@
   <__DataMember_DefaultWPFApplication IsDataContractSerialized="True" PropertyName="DefaultWPFApplication" PropertyType="System.String">
     <string i:nil="true" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
   </__DataMember_DefaultWPFApplication>
+  <__DataMember_UseLegacySilverlightFindLogic IsDataContractSerialized="True" PropertyName="UseLegacySilverlightFindLogic" PropertyType="System.Boolean">
+    <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</boolean>
+  </__DataMember_UseLegacySilverlightFindLogic>
   <__DataMember_BugTitleMask IsDataContractSerialized="True" PropertyName="BugTitleMask" PropertyType="System.String">
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">{Step name} step on {Test name} test failed.</string>
   </__DataMember_BugTitleMask>
@@ -147,7 +150,7 @@
   <ImageScalePercentage Type="System.Int32">75</ImageScalePercentage>
   <SelectedIdentificationScheme Type="System.String">Html</SelectedIdentificationScheme>
   <IdentificationOptionSchemes>
-    <Item Key="Html" Type="ArtOfTest.Common.Design.Translation.IdentificationOptionsScheme" Version="2012.1.719.0" CheckFindParamUniqueness="True" AutoDetectTestRegions="True" TryAttributeCombinations="True" AlwaysAssertTagName="True" TechnologyType="Html">
+    <Item Key="Html" Type="ArtOfTest.Common.Design.Translation.IdentificationOptionsScheme" Version="2012.2.919.0" CheckFindParamUniqueness="True" AutoDetectTestRegions="True" TryAttributeCombinations="True" AlwaysAssertTagName="True" TechnologyType="Html">
       <__DataMember_CheckFindParamUniqueness IsDataContractSerialized="True" PropertyName="CheckFindParamUniqueness" PropertyType="System.Boolean">
         <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</boolean>
       </__DataMember_CheckFindParamUniqueness>
@@ -164,9 +167,9 @@
         <TechnologyType xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.Common">Html</TechnologyType>
       </__DataMember_TechnologyType>
       <IdentificationsPerTag>
-        <Item Key="All Elements" Type="ArtOfTest.Common.Design.Translation.IdentificationDescriptorList" Version="2012.1.719.0">
+        <Item Key="All Elements" Type="ArtOfTest.Common.Design.Translation.IdentificationDescriptorList" Version="2012.2.919.0">
           <List>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" AttributeName="id" SearchType="Attribute">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" AttributeName="id" SearchType="Attribute">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -182,7 +185,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" AttributeName="name" SearchType="Attribute">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" AttributeName="name" SearchType="Attribute">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -198,7 +201,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" AttributeName="src" SearchType="Attribute">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" AttributeName="src" SearchType="Attribute">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -214,7 +217,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" AttributeName="href" SearchType="Attribute">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" AttributeName="href" SearchType="Attribute">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -230,7 +233,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" AttributeName="value" SearchType="Attribute">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" AttributeName="value" SearchType="Attribute">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -246,7 +249,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" AttributeName="alt" SearchType="Attribute">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" AttributeName="alt" SearchType="Attribute">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -262,7 +265,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="True" SearchType="TextContent">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="True" SearchType="TextContent">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</boolean>
               </__DataMember_IsLocked>
@@ -278,7 +281,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.1.719.0" IsLocked="True" SearchType="TagIndex">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.HtmlIdentificationDescriptor" Version="2012.2.919.0" IsLocked="True" SearchType="TagIndex">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</boolean>
               </__DataMember_IsLocked>
@@ -306,7 +309,7 @@
         <Item Type="System.String">__DataMember_TechnologyType</Item>
       </__DataMembers>
     </Item>
-    <Item Key="Silverlight" Type="ArtOfTest.Common.Design.Translation.IdentificationOptionsScheme" Version="2012.1.719.0" CheckFindParamUniqueness="True" AutoDetectTestRegions="True" TryAttributeCombinations="True" AlwaysAssertTagName="True" TechnologyType="Silverlight">
+    <Item Key="Silverlight" Type="ArtOfTest.Common.Design.Translation.IdentificationOptionsScheme" Version="2012.2.919.0" CheckFindParamUniqueness="True" AutoDetectTestRegions="True" TryAttributeCombinations="True" AlwaysAssertTagName="True" TechnologyType="Silverlight">
       <__DataMember_CheckFindParamUniqueness IsDataContractSerialized="True" PropertyName="CheckFindParamUniqueness" PropertyType="System.Boolean">
         <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</boolean>
       </__DataMember_CheckFindParamUniqueness>
@@ -323,9 +326,9 @@
         <TechnologyType xmlns="http://schemas.datacontract.org/2004/07/ArtOfTest.Common">Silverlight</TechnologyType>
       </__DataMember_TechnologyType>
       <IdentificationsPerTag>
-        <Item Key="All Elements" Type="ArtOfTest.Common.Design.Translation.IdentificationDescriptorList" Version="2012.1.719.0">
+        <Item Key="All Elements" Type="ArtOfTest.Common.Design.Translation.IdentificationDescriptorList" Version="2012.2.919.0">
           <List>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" SearchType="AutomationId">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" SearchType="AutomationId">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -341,7 +344,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" SearchType="Name">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" SearchType="Name">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -357,7 +360,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.1.719.0" IsLocked="False" SearchType="TextContent">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.2.919.0" IsLocked="False" SearchType="TextContent">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">false</boolean>
               </__DataMember_IsLocked>
@@ -373,7 +376,7 @@
                 <Item Type="System.String">__DataMember_AttributeName</Item>
               </__DataMembers>
             </Item>
-            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.1.719.0" IsLocked="True" SearchType="TagIndex">
+            <Item Type="ArtOfTest.WebAii.Design.Translation.Silverlight.SilverlightIdentificationDescriptor" Version="2012.2.919.0" IsLocked="True" SearchType="TagIndex">
               <__DataMember_IsLocked IsDataContractSerialized="True" PropertyName="IsLocked" PropertyType="System.Boolean">
                 <boolean xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</boolean>
               </__DataMember_IsLocked>
@@ -415,7 +418,7 @@
   <DefaultDropDownSelection Type="ArtOfTest.WebAii.Design.SelectDropDownType">ByValue</DefaultDropDownSelection>
   <IsOnline Type="System.Boolean">False</IsOnline>
   <ProjectLanguage Type="ArtOfTest.Common.Design.CodeGeneration.CodeGenerationLanguage">CSharp</ProjectLanguage>
-  <ProjectVersion Type="System.String">2012.1.615.0</ProjectVersion>
+  <ProjectVersion Type="System.String">2012.2.904.0</ProjectVersion>
   <Namespace Type="System.String">LocatorTests</Namespace>
   <AssemblyName Type="System.String">LocatorTests</AssemblyName>
   <OutputFolder Type="System.String">bin</OutputFolder>
@@ -430,21 +433,19 @@
   <BugDescriptionMask Type="System.String">{Description}</BugDescriptionMask>
   <BugAddAttachment Type="System.Boolean">False</BugAddAttachment>
   <BugAutoSubmit Type="System.Boolean">False</BugAutoSubmit>
+  <UseLegacySilverlightFindLogic Type="System.Boolean">True</UseLegacySilverlightFindLogic>
   <ProjectReferences>
     <Item Type="System.String">System</Item>
     <Item Type="System.String">System.Core</Item>
-    <Item Type="System.String">ArtOfTest.WebAii, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</Item>
-    <Item Type="System.String">ArtOfTest.WebAii.Design, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</Item>
-    <Item Type="System.String">Telerik.WebAii.Controls.Html, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
-    <Item Type="System.String">Telerik.WebAii.Controls.Xaml, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
-    <Item Type="System.String">Telerik.WebAii.Controls.Xaml.Wpf, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
-    <Item Type="System.String">Telerik.TestingFramework.Controls.KendoUI, Version=2012.1.719.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
+    <Item Type="System.String">ArtOfTest.WebAii, Version=2012.2.919.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c</Item>
+    <Item Type="System.String">ArtOfTest.WebAii.Design, Version=2012.2.919.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d</Item>
+    <Item Type="System.String">Telerik.WebAii.Controls.Html, Version=2012.2.919.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
+    <Item Type="System.String">Telerik.WebAii.Controls.Xaml, Version=2012.2.919.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
+    <Item Type="System.String">Telerik.WebAii.Controls.Xaml.Wpf, Version=2012.2.919.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
+    <Item Type="System.String">Telerik.TestingFramework.Controls.KendoUI, Version=2012.2.919.0, Culture=neutral, PublicKeyToken=528163f3e645de45</Item>
     <Item Type="System.String">D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</Item>
     <Item Type="System.String">System.Windows.Forms</Item>
     <Item Type="System.String">D:\TestStudioDemos\WorkingWithLocators\LocatorTests\libs\nunit.framework.dll</Item>
-    <Item Type="System.String">Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Item>
-    <Item Type="System.String">LocatorTests\libs\nunit.framework.dll</Item>
-    <Item Type="System.String">Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Item>
     <Item Type="System.String">LocatorTests\libs\nunit.framework.dll</Item>
   </ProjectReferences>
   <ExcludedFiles>
@@ -495,6 +496,7 @@
     <Item Type="System.String">__DataMember_RecordWpfWindowStateChanged</Item>
     <Item Type="System.String">__DataMember_PromptNameOnAddElement</Item>
     <Item Type="System.String">__DataMember_DefaultWPFApplication</Item>
+    <Item Type="System.String">__DataMember_UseLegacySilverlightFindLogic</Item>
     <Item Type="System.String">__DataMember_BugTitleMask</Item>
     <Item Type="System.String">__DataMember_BugAddAttachment</Item>
     <Item Type="System.String">__DataMember_BugAutoSubmit</Item>

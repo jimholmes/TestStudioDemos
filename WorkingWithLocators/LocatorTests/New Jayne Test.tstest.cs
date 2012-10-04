@@ -19,31 +19,31 @@ using Telerik.WebAii.Controls.Xaml;
 namespace LocatorTests
 {
 
-	//
-	// You can add custom execution steps by simply
-	// adding a void function and decorating it with the [CodedStep] 
-	// attribute to the test method. 
-	// Those steps will automatically show up in the test steps on save.
-	//
-	// The BaseWebAiiTest exposes all key objects that you can use
-	// to access the current testcase context. [i.e. ActiveBrowser, Find ..etc]
-	//
-	// Data driven tests can use the Data[columnIndex] or Data["columnName"] 
-	// to access data for a specific data iteration.
-	//
-	// Example:
-	//
-	// [CodedStep("MyCustom Step Description")]
-	// public void MyCustomStep()
-	// {
-	//		// Custom code goes here
-	//      ActiveBrowser.NavigateTo("http://www.google.com");
-	//
-	//		// Or
-	//		ActiveBrowser.NavigateTo(Data["url"]);
-	// }
-	//
-		
+    //
+    // You can add custom execution steps by simply
+    // adding a void function and decorating it with the [CodedStep] 
+    // attribute to the test method. 
+    // Those steps will automatically show up in the test steps on save.
+    //
+    // The BaseWebAiiTest exposes all key objects that you can use
+    // to access the current testcase context. [i.e. ActiveBrowser, Find ..etc]
+    //
+    // Data driven tests can use the Data[columnIndex] or Data["columnName"] 
+    // to access data for a specific data iteration.
+    //
+    // Example:
+    //
+    // [CodedStep("MyCustom Step Description")]
+    // public void MyCustomStep()
+    // {
+    //        // Custom code goes here
+    //      ActiveBrowser.NavigateTo("http://www.google.com");
+    //
+    //        // Or
+    //        ActiveBrowser.NavigateTo(Data["url"]);
+    // }
+    //
+        
 
     public class New_Jayne_Test : BaseWebAiiTest
     {
@@ -56,16 +56,16 @@ namespace LocatorTests
         /// to all the elements, frames or regions
         /// in this project.
         /// </summary>
-		public Pages Pages
-		{
-			get
-			{
-				if (_pages == null)
-				{
-					_pages = new Pages(Manager.Current);
-				}
-				return _pages;
-			}
+        public Pages Pages
+        {
+            get
+            {
+                if (_pages == null)
+                {
+                    _pages = new Pages(Manager.Current);
+                }
+                return _pages;
+            }
         }
 
         #endregion
@@ -74,14 +74,16 @@ namespace LocatorTests
         public void New_Jayne_Test_CodedStep()
         {
 
-            RadGrid grid = Pages.DemoPage.Content_Grid;
+            //RadGrid grid = Pages.DemoPage.Content_Grid;
 
+            RadGrid grid = Pages.DemoPage.Content_Grid;
+                        
             IList<Element> newEarthContacts =
                grid.Find.AllByContent("New Earth");
 
             Log.WriteLine("Count of rows: " + newEarthContacts.Count);
 
-            ArtOfTest.Common.UnitTesting.Assert.AreEqual(2, newEarthContacts.Count);
+            Assert.AreEqual(2, newEarthContacts.Count);
 
         }
 
@@ -92,8 +94,8 @@ namespace LocatorTests
 
             RadGrid grid = Find.ById<RadGrid>("ctl00_MainContent_PeopleGrid");
             HtmlTableRow jayne = grid.Find.TableRow("Cobb");
-            ArtOfTest.Common.UnitTesting.Assert.IsNotNull(jayne);
-            ArtOfTest.Common.UnitTesting.Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
+            Assert.IsNotNull(jayne);
+            Assert.IsTrue(jayne.InnerText.Contains("Jayne"));
 
             HtmlAnchor edit = jayne.Find.ByContent<HtmlAnchor>("Edit");
             edit.Click();
@@ -101,6 +103,6 @@ namespace LocatorTests
             //asserts that edit fields show properly
         }
         
-		// Add your test methods here...
+        // Add your test methods here...
     }
 }
