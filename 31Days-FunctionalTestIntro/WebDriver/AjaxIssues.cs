@@ -20,6 +20,8 @@ namespace WebDriverDemo
             profile.Clean();
             var exe = new FirefoxBinary();
             browser = new FirefoxDriver(exe, profile);
+            browser.Manage().Timeouts().
+              ImplicitlyWait(TimeSpan.FromSeconds(10));
         }
 
         [TestFixtureTearDown]
@@ -40,8 +42,7 @@ namespace WebDriverDemo
             browser.FindElement(
                 By.Id("ctl00_SampleContent_Option1")).Click();
 
-            browser.Manage().Timeouts().
-                ImplicitlyWait(TimeSpan.FromSeconds(10));
+          
             
             Assert.IsTrue(browser.FindElement(By.Id("ctl00_SampleContent_lblSelection"))
                                  .Text
@@ -90,8 +91,10 @@ namespace WebDriverDemo
   
         private void Select_make_from_list(string make)
         {
-            var listOfMakes = browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));
-            var makeOptions = new SelectElement(listOfMakes);
+            var listOfMakes = 
+                browser.FindElement(By.Id("ctl00_SampleContent_DropDownList1"));
+            var makeOptions = 
+                new SelectElement(listOfMakes);
             makeOptions.SelectByText(make);
         }
   
@@ -118,7 +121,8 @@ namespace WebDriverDemo
             wait.Until<IWebElement>((d) =>
             {
                 return d.FindElement(By.XPath(
-                    "id('ctl00_SampleContent_DropDownList1')/option[text()='"+ make + "']"));
+                    "id('ctl00_SampleContent_DropDownList1')/option[text()='"+
+                            make + "']"));
             });
         }
 
@@ -161,7 +165,8 @@ namespace WebDriverDemo
         {
             var messageActual = wait.Until<IWebElement>((d) =>
             {
-                return d.FindElement(By.XPath(
+                return d.FindElement(
+                    By.XPath(
                                               "id('ctl00_SampleContent_Label1')[contains(.,'" +
                                               car.Message + "')]"));
             });

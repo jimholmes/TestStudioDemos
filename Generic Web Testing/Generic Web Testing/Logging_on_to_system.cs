@@ -9,6 +9,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace DemoApp.Tests
 {
+    [TestFixture]
     public class Logging_on_to_system
     {
         
@@ -20,9 +21,11 @@ namespace DemoApp.Tests
             browser.Navigate().GoToUrl("http://localhost:3000");
 
             browser.FindElement(By.Id("login_link")).Click();
-            browser.FindElement(By.XPath("//label[contains(.,'Username')]/../input")).SendKeys("testuser");
-            //browser.FindElement(By.Id("username")).SendKeys("testuser");
-            browser.FindElement(By.Id("password")).SendKeys("abc123");
+            browser.FindElement(By.Id("username")).SendKeys("testuser");
+            browser.FindElement(
+                By.XPath("//label[text()='Password']/../input")).
+            SendKeys("abc123");
+            //browser.FindElement(By.Id("password")).SendKeys("abc123");
             browser.FindElement(By.Id("login_button")).Click();
 
             WebDriverWait wait =
@@ -35,12 +38,15 @@ namespace DemoApp.Tests
                         By.XPath("id('description')"));
                 });
 
-            string text = browser.FindElement(By.XPath("id('top-menu')/a[3]")).Text;
+            string text = 
+                browser.FindElement(By.XPath("id('top-menu')/a[3]")).Text;
             Assert.AreEqual("Logout", text);
 
             Assert.IsTrue(
                 browser.FindElement(
-                    By.XPath("id('top-menu')/a[3]")).GetAttribute("href").EndsWith("/logout"));
+                    By.XPath("id('top-menu')/a[3]")).
+                    GetAttribute("href").
+                    EndsWith("/logout"));
 
 
 
@@ -49,3 +55,6 @@ namespace DemoApp.Tests
     }
 
 }
+
+
+//            browser.FindElement(By.XPath("//label[contains(.,'Username')]/../input")).SendKeys("testuser");

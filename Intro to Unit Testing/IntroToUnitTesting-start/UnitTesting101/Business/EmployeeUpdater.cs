@@ -1,4 +1,5 @@
-﻿using System.Security;
+﻿using System;
+using System.Security;
 using UnitTesting101.Contracts;
 using UnitTesting101.Domain;
 
@@ -10,11 +11,12 @@ namespace UnitTesting101.Business
         {
             Employee updatedEmployee;
             if (_updateEmployeeSecurityProvider.CanUpdateEmployeeRate(targetEmployee.EmployeeId))
-//            if (true)
+            //if (true)
             {
                 updatedEmployee = new Employee(targetEmployee.EmployeeId, targetEmployee.FirstName,
                                                targetEmployee.LastName,
                                                targetEmployee.Address, newRate);
+                updatedEmployee.LastUpdated = DateTime.Now;
             }
             else
             {

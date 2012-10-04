@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnitTesting101.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:UnitTesting101.Business.Fakes.ShimEmployeeUpdater">
+            <summary>Shim type of UnitTesting101.Business.EmployeeUpdater</summary>
+        </member>
+        <member name="M:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.#ctor(UnitTesting101.Business.EmployeeUpdater)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.ConstructorIUpdateEmployeePermissible">
+            <summary>Sets the shim of EmployeeUpdater.EmployeeUpdater(IUpdateEmployeePermissible updateEmployeeSecurityProvider)</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.UpdateEmployeeRateEmployeeSingle">
+            <summary>Sets the shim of EmployeeUpdater.UpdateEmployeeRate(Employee targetEmployee, Single newRate)</summary>
+        </member>
+        <member name="T:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.ShimEmployeeUpdater.AllInstances.UpdateEmployeeRateEmployeeSingle">
+            <summary>Sets the shim of EmployeeUpdater.UpdateEmployeeRate(Employee targetEmployee, Single newRate)</summary>
+        </member>
+        <member name="T:UnitTesting101.Business.Fakes.StubEmployeeUpdater">
+            <summary>Stub type of UnitTesting101.Business.EmployeeUpdater</summary>
+        </member>
+        <member name="M:UnitTesting101.Business.Fakes.StubEmployeeUpdater.#ctor(UnitTesting101.Contracts.IUpdateEmployeePermissible)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Business.Fakes.StubEmployeeUpdater.InitializeStub">
+            <summary>Initializes a new instance of type StubEmployeeUpdater</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.StubEmployeeUpdater.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.StubEmployeeUpdater.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTesting101.Business.Fakes.StubEmployeeUpdater.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTesting101.Contracts.Fakes.StubIUpdateEmployeePermissible">
+            <summary>Stub type of UnitTesting101.Contracts.IUpdateEmployeePermissible</summary>
+        </member>
+        <member name="M:UnitTesting101.Contracts.Fakes.StubIUpdateEmployeePermissible.#ctor">
+            <summary>Initializes a new instance of type StubIUpdateEmployeePermissible</summary>
+        </member>
+        <member name="F:UnitTesting101.Contracts.Fakes.StubIUpdateEmployeePermissible.CanUpdateEmployeeRateInt32">
+            <summary>Sets the stub of IUpdateEmployeePermissible.CanUpdateEmployeeRate(Int32 targetEmployeeId)</summary>
+        </member>
+        <member name="M:UnitTesting101.Contracts.Fakes.StubIUpdateEmployeePermissible.ut101::UnitTesting101#Contracts#IUpdateEmployeePermissible#CanUpdateEmployeeRate(System.Int32)">
+            <summary>Sets the stub of IUpdateEmployeePermissible.CanUpdateEmployeeRate(Int32 targetEmployeeId)</summary>
+        </member>
+        <member name="T:UnitTesting101.Domain.Fakes.ShimEmployee">
+            <summary>Shim type of UnitTesting101.Domain.Employee</summary>
+        </member>
+        <member name="M:UnitTesting101.Domain.Fakes.ShimEmployee.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Domain.Fakes.ShimEmployee.#ctor(UnitTesting101.Domain.Employee)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Domain.Fakes.ShimEmployee.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTesting101.Domain.Fakes.ShimEmployee.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AddressGet">
+            <summary>Sets the shim of Employee.get_Address()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AddressSetString">
+            <summary>Sets the shim of Employee.set_Address(String value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.ConstructorInt32StringStringStringSingle">
+            <summary>Sets the shim of Employee.Employee(Int32 employeeId, String firstName, String lastName, String address, Single hourlyRate)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.EmployeeIdGet">
+            <summary>Sets the shim of Employee.get_EmployeeId()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.EmployeeIdSetInt32">
+            <summary>Sets the shim of Employee.set_EmployeeId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.FirstNameGet">
+            <summary>Sets the shim of Employee.get_FirstName()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.FirstNameSetString">
+            <summary>Sets the shim of Employee.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.HourlyRateGet">
+            <summary>Sets the shim of Employee.get_HourlyRate()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.LastNameGet">
+            <summary>Sets the shim of Employee.get_LastName()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.LastNameSetString">
+            <summary>Sets the shim of Employee.set_LastName(String value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.LastUpdatedGet">
+            <summary>Sets the shim of Employee.get_LastUpdated()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.LastUpdatedSetDateTime">
+            <summary>Sets the shim of Employee.set_LastUpdated(DateTime value)</summary>
+        </member>
+        <member name="T:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.AddressGet">
+            <summary>Sets the shim of Employee.get_Address()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.AddressSetString">
+            <summary>Sets the shim of Employee.set_Address(String value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.EmployeeIdGet">
+            <summary>Sets the shim of Employee.get_EmployeeId()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.EmployeeIdSetInt32">
+            <summary>Sets the shim of Employee.set_EmployeeId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.FirstNameGet">
+            <summary>Sets the shim of Employee.get_FirstName()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.FirstNameSetString">
+            <summary>Sets the shim of Employee.set_FirstName(String value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.HourlyRateGet">
+            <summary>Sets the shim of Employee.get_HourlyRate()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.LastNameGet">
+            <summary>Sets the shim of Employee.get_LastName()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.LastNameSetString">
+            <summary>Sets the shim of Employee.set_LastName(String value)</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.LastUpdatedGet">
+            <summary>Sets the shim of Employee.get_LastUpdated()</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.ShimEmployee.AllInstances.LastUpdatedSetDateTime">
+            <summary>Sets the shim of Employee.set_LastUpdated(DateTime value)</summary>
+        </member>
+        <member name="T:UnitTesting101.Domain.Fakes.StubEmployee">
+            <summary>Stub type of UnitTesting101.Domain.Employee</summary>
+        </member>
+        <member name="M:UnitTesting101.Domain.Fakes.StubEmployee.#ctor(System.Int32,System.String,System.String,System.String,System.Single)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Domain.Fakes.StubEmployee.InitializeStub">
+            <summary>Initializes a new instance of type StubEmployee</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.StubEmployee.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.StubEmployee.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTesting101.Domain.Fakes.StubEmployee.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTesting101.Fakes.ShimWageComputer">
+            <summary>Shim type of UnitTesting101.WageComputer</summary>
+        </member>
+        <member name="M:UnitTesting101.Fakes.ShimWageComputer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Fakes.ShimWageComputer.#ctor(UnitTesting101.WageComputer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Fakes.ShimWageComputer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTesting101.Fakes.ShimWageComputer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.ShimWageComputer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.ShimWageComputer.ComputeWagesSingleSingleBoolean">
+            <summary>Sets the shim of WageComputer.ComputeWages(Single hours, Single rate, Boolean isHourlyWorker)</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.ShimWageComputer.Constructor">
+            <summary>Sets the shim of WageComputer.WageComputer()</summary>
+        </member>
+        <member name="T:UnitTesting101.Fakes.ShimWageComputer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.ShimWageComputer.AllInstances.ComputeWagesSingleSingleBoolean">
+            <summary>Sets the shim of WageComputer.ComputeWages(Single hours, Single rate, Boolean isHourlyWorker)</summary>
+        </member>
+        <member name="T:UnitTesting101.Fakes.StubWageComputer">
+            <summary>Stub type of UnitTesting101.WageComputer</summary>
+        </member>
+        <member name="M:UnitTesting101.Fakes.StubWageComputer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Fakes.StubWageComputer.InitializeStub">
+            <summary>Initializes a new instance of type StubWageComputer</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.StubWageComputer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.StubWageComputer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTesting101.Fakes.StubWageComputer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider">
+            <summary>Shim type of UnitTesting101.Providers.UpdateEmployeeSecurityProvider</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.#ctor(UnitTesting101.Providers.UpdateEmployeeSecurityProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.Bind(UnitTesting101.Contracts.IUpdateEmployeePermissible)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.CanUpdateEmployeeRateInt32">
+            <summary>Sets the shim of UpdateEmployeeSecurityProvider.CanUpdateEmployeeRate(Int32 employeeId)</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.Constructor">
+            <summary>Sets the shim of UpdateEmployeeSecurityProvider.UpdateEmployeeSecurityProvider()</summary>
+        </member>
+        <member name="T:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.ShimUpdateEmployeeSecurityProvider.AllInstances.CanUpdateEmployeeRateInt32">
+            <summary>Sets the shim of UpdateEmployeeSecurityProvider.CanUpdateEmployeeRate(Int32 employeeId)</summary>
+        </member>
+        <member name="T:UnitTesting101.Providers.Fakes.StubUpdateEmployeeSecurityProvider">
+            <summary>Stub type of UnitTesting101.Providers.UpdateEmployeeSecurityProvider</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.StubUpdateEmployeeSecurityProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTesting101.Providers.Fakes.StubUpdateEmployeeSecurityProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubUpdateEmployeeSecurityProvider</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.StubUpdateEmployeeSecurityProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.StubUpdateEmployeeSecurityProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTesting101.Providers.Fakes.StubUpdateEmployeeSecurityProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

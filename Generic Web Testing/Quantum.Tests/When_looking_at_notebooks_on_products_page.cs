@@ -47,6 +47,13 @@ namespace Quantum.Tests
             IList<IWebElement> contents = list.FindElements(By.TagName("li"));
             
             Assert.AreEqual(6, contents.Count);
+
+            IList<string> itemNames = new List<string>();
+            foreach (var item in contents)
+            {
+                itemNames.Add(item.Text);
+            }
+
         }
     }
 }

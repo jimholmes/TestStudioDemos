@@ -44,6 +44,13 @@ namespace PayrollSystem.Tests
             var wages = computer.ComputeWages(-1, 5, true);
         }
 
+        [Test]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Negative_rate_throws_exception()
+        {
+            var wages = computer.ComputeWages(1, -1, true);
+        }
+
         [TestCase(40, 5, Result = 200)]
         [TestCase(41, 5, Result = 207.50)]
         [TestCase(-1, 5, ExpectedException = (typeof(ArgumentException)))]
@@ -65,7 +72,7 @@ namespace PayrollSystem.Tests
             left.Add(3);
             left.Add(2);
 
-            CollectionAssert.AreEqual(right, left);
+            CollectionAssert.AreEquivalent(right, left);
         }
     }
 }

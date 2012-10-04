@@ -1,4 +1,6 @@
-﻿namespace UnitTesting101.Domain
+﻿using System;
+
+namespace UnitTesting101.Domain
 {
     public class Employee
     {
@@ -18,6 +20,7 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Address { get; set; }
+        public DateTime LastUpdated { get; set; }
 
         public float HourlyRate
         {

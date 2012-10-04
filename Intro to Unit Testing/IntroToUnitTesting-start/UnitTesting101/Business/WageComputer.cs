@@ -11,7 +11,9 @@ namespace UnitTesting101
                                     float rate, 
                                     bool isHourlyWorker)
         {
-            if (hours < 0)
+            if (hours < 0 ||
+                rate < 0
+                )
             {
                 throw new ArgumentException();
             }
