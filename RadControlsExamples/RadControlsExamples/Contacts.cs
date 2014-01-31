@@ -16,14 +16,12 @@ namespace RadControlsExamples
         {
             IList<Contact> contacts = CreateListOfContacts();
 
-            //return Sort(contacts);
-            return contacts;
+            return Sort(contacts);
         }
   
         private IList<Contact> Sort(IList<Contact> contacts)
         {
-            //var shuffled = contacts.OrderBy(a => Guid.NewGuid());
-            var shuffled = contacts.OrderBy(a => a.Id);
+            var shuffled = contacts.OrderBy(a => a.LastName);
             IList<Contact> newList = new List<Contact>();
             foreach (var item in shuffled)
             {

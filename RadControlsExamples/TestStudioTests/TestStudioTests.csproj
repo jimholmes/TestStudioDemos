@@ -40,6 +40,7 @@
     <Reference Include="ArtOfTest.WebAii" />
     <Reference Include="ArtOfTest.WebAii.Design" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="Telerik.TestingFramework.Controls.KendoUI" />
     <Reference Include="Telerik.WebAii.Controls.Html" />
@@ -52,24 +53,41 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodedExamples.tstest.cs">
+      <DependentUpon>CodedExamples.tstest</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Settings.aiis" />
-    <None Include="Verify Jayne Cobb.tstest">
+    <Compile Include="RecordingANewTest.tstest.cs">
+      <DependentUpon>RecordingANewTest.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyJayneCobbRow.tstest.cs">
+      <DependentUpon>VerifyJayneCobbRow.tstest</DependentUpon>
+    </Compile>
+    <None Include="CodedExamples.tstest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="WebTest1.tstest" />
+    <None Include="RecordingANewTest.tstest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Settings.aiis" />
+    <None Include="VerifyJayneCobbRow.tstest" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="WebTest1.resx">
-      <DependentUpon>WebTest1.tstest</DependentUpon>
+    <None Include="VerifyJayneCobbRow.resx">
+      <DependentUpon>VerifyJayneCobbRow.tstest</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Verify Jayne Cobb.resx">
-      <DependentUpon>Verify Jayne Cobb.tstest</DependentUpon>
+    <None Include="RecordingANewTest.resx">
+      <DependentUpon>RecordingANewTest.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodedExamples.resx">
+      <DependentUpon>CodedExamples.tstest</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

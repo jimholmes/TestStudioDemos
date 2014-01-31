@@ -24,6 +24,11 @@
 </ExpandCollapseColumn>
 
     <Columns>
+ 
+        
+         
+                   
+     
         <telerik:GridBoundColumn DataField="Region" 
             FilterControlAltText="Filter Region column" HeaderText="Region" 
             SortExpression="Region" UniqueName="Region">
@@ -40,12 +45,15 @@
             FilterControlAltText="Filter FirstName column" HeaderText="FirstName" 
             SortExpression="FirstName" UniqueName="FirstName">
         </telerik:GridBoundColumn>
-        <telerik:GridBoundColumn DataField="Id" DataType="System.Int32" 
+                  
+  <telerik:GridBoundColumn DataField="Id" DataType="System.Int32" 
             FilterControlAltText="Filter Id column" HeaderText="Id" SortExpression="Id" 
             UniqueName="Id">
-        </telerik:GridBoundColumn>
+        </telerik:GridBoundColumn>        
         <telerik:GridEditCommandColumn FilterControlAltText="Filter EditCommandColumn column">
-        </telerik:GridEditCommandColumn>
+        </telerik:GridEditCommandColumn>    
+       
+ 
     </Columns>
 
 <EditFormSettings>
